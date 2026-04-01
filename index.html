@@ -1,58 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
 
-  <link rel="stylesheet" href="css/global.css"> 
-  <link rel="stylesheet" href="css/index.css">
-  <title>Perfil</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Perfil</title>
+  </head>
+  <body>
+    <main>
+      <div class="nomesite">
+        <img src="assets/img/logo.png" alt="StreamMaster Logo" />
+      </div>
+      <!---->
+      <section class="profiles">
+        <h1>Quem está assistindo?</h1>
+        <ul class="profiles-list" id="profilesList">
+          <!-- Perfis serão renderizados dinamicamente aqui -->
+        </ul>
+        <button class="gerenciar-perfis" id="btnGerenciar">
+          Gerenciar Perfis
+        </button>
+      </section>
 
-  
-</head>
-<body>
-  <main>
-     <div class="nomesite">
-      <img src="assets/img/logo.png" alt="StreamMaster Logo">
-     </div> <!---->
-    <section class="profiles">
-      
-      <h1> Quem está assistindo? </h1>
-      <ul>
-        <li  class="profile">
-          <a href="home.html">
-            <img src="https://i.pinimg.com/736x/8b/cd/c9/8bcdc9a84725237563a196342e805b5c.jpg" alt="ovelha">
-            <p>João</p>
-         </a>
-          
-        </li>
-        <li class="profile">
-          <a href="home.html">
-            <img src="https://i.pinimg.com/736x/70/d6/ad/70d6ad449de525476989a2d916f79fb4.jpg" alt="hamster, funcionario do mcdonalds">
-            <p>José</p>
-          </a>   
-        </li>
+      <!-- Modal de Gerenciamento de Perfis -->
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-gerenciar" id="modalGerenciar">
+        <div class="modal-header">
+          <h2>Gerenciar Perfis</h2>
+          <button class="modal-close" id="btnFecharModal">&times;</button>
+        </div>
 
-        <li class="profile">
-            <a href="home.html">
-              <img src="https://i.pinimg.com/736x/7c/ee/48/7cee48f8cc775c1f4c25f45d37db164a.jpg" alt="perssonagem do filme trolls">
-              <p>Maria</p>
-            </a>
-            
-        </li>
-        <li class="profile">
-          <a href="home.html">
-            <img src="https://i.pinimg.com/1200x/1a/f3/70/1af3701f6cee4157e1b8d8b82123ca6d.jpg" alt="">
-            <p>Amanda</p>
-          </a>
-        </li>
-      </ul>
-      <button class="gerenciar-perfis">Gerenciar Perfis</button>
-    </section>
+        <div class="modal-conteudo">
+          <!-- Perfis Existentes -->
+          <div class="secao-perfis">
+            <h3>Perfis Existentes</h3>
+            <ul class="perfis-gerenciar" id="perfisGerenciar">
+              <!-- Perfis existentes com opção de deletar -->
+            </ul>
+          </div>
 
-     <!-- -->
-  </main>
-</body>
+          <!-- Adicionar Novo Perfil -->
+          <div class="secao-adicionar">
+            <h3>Adicionar Novo Perfil</h3>
+            <form id="formAdicionarPerfil">
+              <div class="form-group">
+                <label for="nomePerfil">Nome do Perfil:</label>
+                <input
+                  type="text"
+                  id="nomePerfil"
+                  placeholder="Ex: Pedro"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="imagemPerfil">Imagem do Perfil:</label>
+                <div class="opcoes-imagem">
+                  <div>
+                    <label>URL da Internet:</label>
+                    <input
+                      type="url"
+                      id="imagemURL"
+                      placeholder="https://exemplo.com/imagem.jpg"
+                    />
+                  </div>
+                  <div>
+                    <label>ou Upload do Computador:</label>
+                    <input type="file" id="imagemFile" accept="image/*" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="preview-imagem" id="previewImagem"></div>
+
+              <button type="submit" class="btn-adicionar">
+                Adicionar Perfil
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- -->
+    </main>
+    <script src="js/index.js"></script>
+  </body>
 </html>

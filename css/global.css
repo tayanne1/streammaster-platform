@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 /* ------------------- Configurações Gerais ------------------- */
 * {
@@ -10,16 +14,21 @@
   text-decoration: none;
   list-style: none;
 }
-
- body, main { 
-  font-family: Arial, sans-serif;
-  position: relative;
-  height: 100vh;
-  width: 100%; 
- /* background-color: #151313;  */
- background: radial-gradient(circle, #151313 0%, #000000 100%);
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
+body {
+  margin: 0;
+   background: radial-gradient(circle, #151313 0%, #000000 100%) ;/*no-repeat fixed */
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
 
 
 /* ------------------- Cabeçalho ------------------- */
@@ -41,6 +50,14 @@
 .navdireita a {
   color: #fff;
 }
+.navdireita {
+  display: flex;
+  gap: 10px;
+}
+ .navdireita a:hover {
+  color: #ff6f00;
+  transition: color 0.3s ease;
+}
 
 /* ------------------- Navegação ------------------- */
 .cabecalho .menunav {
@@ -56,10 +73,6 @@
   background-color: rgb(50, 50, 50, 0.5);
   position: relative;
 }
-
-/*.menunav .linknav{
-   
-}*/
 
 .cabecalho .menunav .linknav {
   display: flex;
@@ -106,17 +119,6 @@
   margin: 0 5px;
 }
 
-.entrar a {
-  background: rgb(255, 255, 255, 0.2) ;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #ff6f00;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 30px;
-  font-weight: bold;
-}
-
 .linknav li a:hover::after {
   content: '';
   position: absolute;
@@ -147,6 +149,7 @@
 /* ------------------- Scrollbar ------------------- */
 ::-webkit-scrollbar {
   width: 12px;
+  
 }
 
 ::-webkit-scrollbar-track {
