@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/c3777539d2.js" crossorigin="anonymous" ></script>
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/global.css">
+  <title>Detalhes do Filme</title>
+
+
+</head>
+<body>
+
+   <header class="cabecalho">
+      <nav class="menunav" role="navigation" aria-label="Main Navigation">
+        <input type="checkbox" id="check">
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <i class="fa-solid fa-times" id="cancel"></i>
+        </label>
+        <div class="left-container">
+          <h1 class="nomesite">
+            <img src="assets/img/logo.png" alt="StreamMaster Logo" />
+          </h1>
+          <ul class="linknav">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="">Em Breve</a></li>
+          </ul>
+        </div>
+ 
+        <ul class="navdireita">
+          <li>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li class="perfil-usuario" id="perfilAtivo"></li>
+        </ul>
+      </nav>
+    </header>
+
+
+<main class="container" id="container">
+
+   <div class="content"><!-- -->
+    <!-- POSTER -->
+    <div class="poster">
+      <img id="poster" src="" alt="Poster do filme">
+       <div class="watch-btn">
+        <a href="#">Assistir</a>
+       </div>
+    </div>
+    <!-- DETALHES -->
+    <div class="details">
+      <div class="nomeeicones">
+        <h1 id="titulo">Carregando...</h1>
+        <a href="#" class="save-btn"><i class="fa-solid fa-bookmark"></i></a>
+        <a href="#" class="watched-btn"><i class="fa-solid fa-check"></i></a>
+      </div>
+    
+      <div class="info">
+        <div class="meta" id="meta"> </div>
+      </div>
+    
+      <!-- TABS -->
+      <div class="tabs">
+        <!-- Sinopse -->
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label for="tab1" class="viewer">Sinopse</label>
+        <div class="tab-content" id="descricao">
+        </div>
+        <!-- Elenco -->
+        <input type="radio" id="tab2" name="tabs">
+        <label for="tab2">Elenco</label>
+        <div class="tab-content" id="elenco"></div>
+        <!-- Trailer -->
+        <input type="radio" id="tab3" name="tabs">
+        <label for="tab3">Trailer & mais</label>
+        <div class="tab-content" id="trailer-container">
+          <iframe id="trailer" width="460" height="225" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <div id="trailerInfo"></div>
+        </div>
+        <!-- Sobre -->
+        <input type="radio" id="tab4" name="tabs">
+        <label for="tab4">Sobre</label>
+        <div class="tab-content" id="sobre"></div>
+        <!-- Resenhas -->
+        <input type="radio" id="tab5" name="tabs">
+        <label for="tab5">Resenhas</label>
+        <div class="tab-content" id="resenha"></div>
+        <!-- Mais -->
+        <input type="radio" id="tab6" name="tabs">
+        <label for="tab6">Mais assim</label>
+        <div class="tab-content" id="mas"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  verificarAutenticacao();
+  renderizarPerfilNoTopo();
+</script>
+<!-- <script src="detalhe-filmes/assets2/js/script2.js"></script> -->
+</body>
+</html>

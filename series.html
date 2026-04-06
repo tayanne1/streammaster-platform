@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/c3777539d2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="imagepng" />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/catalogos.css" />
+    <title>StreamMaster - Séries</title>
+  </head>
+  <body>
+    <header class="cabecalho filmes">
+      <nav class="menunav">
+        <div class="left-container">
+          <h1 class="nomesite">
+            <img src="assets/img/logo.png" alt="StreamMaster Logo" />
+          </h1>
+          <ul class="linknav">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="#">Em Breve</a></li>
+          </ul>
+        </div>
+
+        <ul class="navdireita">
+          <li>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li class="perfil-usuario" id="perfilAtivo"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h2 class="media filmes-titulo">Todas as Séries</h2>
+
+      <section class="filmes-section">
+        <ul class="grid-filmes">
+          <li class="filme-item" data-genre="sci-fi acao aventura">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/fallout.jpg" alt="Serie: Fallout" />
+                <h3>Fallout</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao crime drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/reacher.jpg" alt="Serie: Reacher" />
+                <h3>Reacher</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="animacao acao aventura fantasia sci-fi">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/arcane.jpg" alt="Serie: Arcane" />
+                <h3>Arcane</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama historico acao">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/shogun.jpg" alt="Serie: Shogun" />
+                <h3>Shogun</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item " data-genre="acao comedia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/peaky-blinders.jpg"
+                  alt="Serie: Peaky Blinders"
+                />
+                <h3>Peaky Blinders</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre=" misterio suspense crime drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/dark.jpg" alt="Serie: Dark" />
+                <h3>Dark</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama misterio suspense">
+            <article class="filmelist filme">
+              <a href="#"
+                ><img src="assets/img/pastaseries/you.jpg" alt="Serie: You" />
+                <h3>You</h3></a>
+            </article>
+          </li>
+
+           <li class="filme-item" data-genre="drama fantasia">
+            <article class="filmelist filme">
+              <a href="#"
+                ><img
+                  src="assets/img/pastaseries/deaths-game.jpg"
+                  alt="Serie: Deaths Game"
+                />
+                <h3>Deaths Game</h3></a
+              >
+            </article>
+          </li>
+
+          <li
+            class="filme-item"
+            data-genre="drama sci-fi terror misterio suspense"
+          >
+            <article class="filmelist filme">
+              <a href="#"
+                ><img
+                  src="assets/img/pastaseries/stranger-things.jpg"
+                  alt="Serie: Stranger Things"
+                />
+                <h3>Stranger Things</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="crime drama misterio suspense">
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/scarpetta.jpg"
+                  alt="Serie: Scarpetta"
+                />
+                <h3>Scarpetta</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item">
+            <article class="filmelist filme" data-genre="fantasia acao aventura">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/one-piece.jpg"
+                  alt="Serie: One Piece"
+                />
+                <h3>One Piece</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="kdrama romance comedia fantasia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/boyfriend-on-demand.jpg"
+                  alt="Serie: Boyfriend on Demand"
+                />
+                <h3>Boyfriend on Demand</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="aventura acao misterio suspense">
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/young-sherlock.jpg"
+                  alt="Serie: Young Sherlock"
+                />
+                <h3>Young Sherlock</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="historia drama sci-fi">
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/the-man-in-the-high-castle.jpg"
+                  alt="Serie: The Man in the High Castle"
+                />
+                <h3>The Man in the High Castle</h3>
+              </a>
+            </article>
+          </li>
+
+          <li
+            class="filme-item"
+            data-genre="kdrama sci-fi misterio suspense drama"
+          >
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/alice-in-borderland.jpg"
+                  alt="Serie: Alice in Borderland"
+                />
+                <h3>Alice in Borderland</h3>
+              </a>
+            </article>
+          </li>
+          <li class="filme-item" data-genre="drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/the-pitt.jpg"
+                  alt="Serie: The Pitt"
+                />
+                <h3>The Pitt</h3>
+              </a>
+            </article>
+          </li>
+          <li
+            class="filme-item"
+            data-genre="drama misterio suspense acao aventura"
+          >
+            <article class="filmelist filme">
+              <a href="#">
+                <img
+                  src="assets/img/pastaseries/the-night-agent.jpg"
+                  alt="Serie: The Night Agent"
+                />
+                <h3>The Night Agent</h3>
+              </a>
+            </article>
+          </li>
+
+
+          <li class="filme-item" data-genre="crime drama suspense">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/breaking-bad.jpg" alt="Serie: Breaking Bad" />
+                <h3>Breaking Bad</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="fantasia acao drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/game-of-thrones.jpg" alt="Serie: Game of Thrones" />
+                <h3>Game of Thrones</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama suspense acao">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/round-6.jpg" alt="Serie: Round 6" />
+                <h3>Round 6</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama acao sci-fi">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-last-of-us.jpg" alt="Serie: The Last of Us" />
+                <h3>The Last of Us</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="crime acao suspense">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/la-casa-de-papel.jpg" alt="Serie: La Casa de Papel" />
+                <h3>La Casa de Papel</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="fantasia comedia misterio">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/wandinha.jpg" alt="Serie: Wandinha" />
+                <h3>Wandinha</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao comedia sci-fi">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-boys.jpg" alt="Serie: The Boys" />
+                <h3>The Boys</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama romance">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/greys-anatomy.jpg" alt="Serie: Grey's Anatomy" />
+                <h3>Grey's Anatomy</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="terror acao drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-walking-dead.jpg" alt="Serie: The Walking Dead" />
+                <h3>The Walking Dead</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="comedia romance">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/friends.jpg" alt="Serie: Friends" />
+                <h3>Friends</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama historico biografia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-crown.jpg" alt="Serie: The Crown" />
+                <h3>The Crown</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="sci-fi suspense drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/black-mirror.jpg" alt="Serie: Black Mirror" />
+                <h3>Black Mirror</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao aventura sci-fi">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-mandalorian.jpg" alt="Serie: The Mandalorian" />
+                <h3>The Mandalorian</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao comedia drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/cobra-kai.jpg" alt="Serie: Cobra Kai" />
+                <h3>Cobra Kai</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama comedia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-bear.jpg" alt="Serie: The Bear" />
+                <h3>The Bear</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama comedia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/succession.jpg" alt="Serie: Succession" />
+                <h3>Succession</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="crime drama biografia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/narcos.jpg" alt="Serie: Narcos" />
+                <h3>Narcos</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="fantasia acao aventura">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-witcher.jpg" alt="Serie: The Witcher" />
+                <h3>The Witcher</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="crime drama suspense">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/ozark.jpg" alt="Serie: Ozark" />
+                <h3>Ozark</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/euphoria.jpg" alt="Serie: Euphoria" />
+                <h3>Euphoria</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="fantasia drama acao">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/house-of-the-dragon.jpg" alt="Serie: House of the Dragon" />
+                <h3>House of the Dragon</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="comedia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/the-office.jpg" alt="Serie: The Office" />
+                <h3>The Office</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="romance drama historico">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/bridgerton.jpg" alt="Serie: Bridgerton" />
+                <h3>Bridgerton</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="crime drama">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/better-call-saul.jpg" alt="Serie: Better Call Saul" />
+                <h3>Better Call Saul</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao aventura sci-fi fantasia">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/loki.jpg" alt="Serie: Loki" />
+                <h3>Loki</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="comedia drama esporte">
+            <article class="filmelist filme">
+              <a href="#">
+                <img src="assets/img/pastaseries/ted-lasso.jpg" alt="Serie: Ted Lasso" />
+                <h3>Ted Lasso</h3>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+      verificarAutenticacao();
+      renderizarPerfilNoTopo();
+    </script>
+  </body>
+</html>

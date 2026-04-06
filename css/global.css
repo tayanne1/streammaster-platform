@@ -60,6 +60,12 @@ main {
 }
 
 /* ------------------- Navegação ------------------- */
+
+.cabecalho {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
 .cabecalho .menunav {
   margin: 0;
   padding: 0;

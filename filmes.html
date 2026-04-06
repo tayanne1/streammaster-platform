@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/c3777539d2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="imagepng" />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/catalogos.css" />
+    <title>StreamMaster - Filmes</title>
+  </head>
+  <body>
+    <header class="cabecalho filmes">
+      <nav class="menunav">
+        <div class="left-container">
+          <h1 class="nomesite">
+            <img src="assets/img/logo.png" alt="StreamMaster Logo" />
+          </h1>
+          <ul class="linknav">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="#">Em Breve</a></li>
+          </ul>
+        </div>
+
+        <ul class="navdireita">
+          <li>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li class="perfil-usuario" id="perfilAtivo"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h2 class="media filmes-titulo">Todos os Filmes</h2>
+
+      <section class="filmes-section">
+        <ul class="grid-filmes">
+          <!-- FILMES DO HOME.HTML -->
+          <li class="filme-item" data-genre="acao comedia">
+            <article class="filmelist filme">
+              <a href="info.html?id=deadpooltwo">
+                <img
+                  src="assets/img/pastafilmes/deadpooltwo.jpg"
+                  alt="Filme: DeadPool 2"
+                />
+                <h3>DeadPool 2</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="terror">
+            <article class="filmelist filme">
+              <a href="info.html?id=sinners">
+                <img
+                  src="assets/img/pastafilmes/sinners.jpg"
+                  alt="Filme: Sinners"
+                />
+                <h3>Sinners</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="crime drama historico acao">
+            <article class="filmelist filme">
+              <a href="info.html?id=peaky_blinders" 
+                ><img
+                  src="assets/img/pastafilmes/peaky-blinders-theimmortalman.jpg"
+                  alt="Filme: Peaky Blinders: The Immortal Man"
+                />
+                <h3>Peaky Blinders: The Immortal Man</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="terror suspence comedia misterio">
+            <article class="filmelist filme">
+              <a href="info.html?id=ready_or_not_2"
+                ><img
+                  src="assets/img/pastafilmes/readyorNotTwo.jpg"
+                  alt="Filme: Ready or Not 2: Here I Come"
+                />
+                <h3>Ready or Not 2: Here I Come</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="kids animacao familia">
+            <article class="filmelist filme">
+              <a href="info.html?id=luca"
+                ><img
+                  src="assets/img/pastafilmes/luca.jpg"
+                  alt="Filme: Luca "
+                />
+                <h3>Luca</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="sci-fi aventura">
+            <article class="filmelist filme">
+              <a href="info.html?id=projecthailmary">
+                <img
+                  src="assets/img/pastafilmes/ProjectHailMary.jpg"
+                  alt="Filme: Project Hail Mary"
+                />
+                <h3>Project Hail Mary</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="misterio suspence comedia drama">
+            <article class="filmelist filme">
+              <a href="info.html?id=oneBattleAfterAnother"
+                ><img
+                  src="assets/img/pastafilmes/one-battle-after-another.jpg"
+                  alt="Filme: One Battle After Another"
+                />
+                <h3>One Battle After Another</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="kids familia comedia aventura animacao">
+            <article class="filmelist filme">
+              <a href="info.html?id=hoppers"
+                ><img
+                  src="assets/img/pastafilmes/hoppers.jpg"
+                  alt="Filme: Hoppers"
+                />
+                <h3>Hoppers</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao sci-fi misterio suspence">
+            <article class="filmelist filme">
+              <a href="info.html?id=war_machine"
+                ><img
+                  src="assets/img/pastafilmes/war-machine.jpg"
+                  alt="Filme: War Machine"
+                />
+                <h3>War Machine</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao aventura  sci-fi">
+            <article class="filmelist filme">
+              <a href="info.html?id=superman">
+                <img
+                  src="assets/img/pastafilmes/supermann.jpg"
+                  alt="Filme: Superman"
+                />
+                <h3>Superman</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="romance drama">
+            <article class="filmelist filme">
+              <a href="info.html?id=remindersOfHim"
+                ><img
+                  src="assets/img/pastafilmes/reminders-of-him.jpg"
+                  alt="Filme: Reminders of Him"
+                />
+                <h3>Reminders of Him</h3></a
+              >
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="sci-fi aventura acao">
+            <article class="filmelist filme">
+              <a href="info.html?id=avatar">
+                <img
+                  src="assets/img/pastafilmes/avatar.jpg"
+                  alt="Filme: Avatar"
+                />
+                <h3>Avatar</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao aventura sci-fi">
+            <article class="filmelist filme">
+              <a href="info.html?id=avengersEndgame">
+                <img
+                  src="assets/img/pastafilmes/vingadores-endgame.jpg"
+                  alt="Filme: Vingadores: Ultimato"
+                />
+                <h3>Vingadores: Ultimato</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="romance drama historico">
+            <article class="filmelist filme">
+              <a href="info.html?id=titanic">
+                <img
+                  src="assets/img/pastafilmes/titanic.jpg"
+                  alt="Filme: Titanic"
+                />
+                <h3>Titanic</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="sci-fi aventura acao">
+            <article class="filmelist filme">
+              <a href="info.html?id=avatar2">
+                <img
+                  src="assets/img/pastafilmes/avatar-caminho-das-aguas.jpg"
+                  alt="Filme: Avatar: O Caminho da Água"
+                />
+                <h3>Avatar: O Caminho da Água</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao aventura sci-fi">
+            <article class="filmelist filme">
+              <a href="info.html?id=avengersInfinityWar">
+                <img
+                  src="/assets/img/pastafilmes/vingadores-guerra-infinita.jpg"
+                  alt="Filme: Vingadores: Guerra Infinita"
+                />
+                <h3>Vingadores: Guerra Infinita</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao aventura sci-fi fantasia">
+            <article class="filmelist filme">
+              <a href="info.html?id=homemAranhaSemVoltaParaCasa">
+                <img
+                  src="assets/img/pastafilmes/homem-aranha-sem-volta-para-casa.jpg"
+                  alt="Filme: Homem-Aranha: Sem Volta para Casa"
+                />
+                <h3>Homem-Aranha: Sem Volta para Casa</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="animacao aventura familia drama">
+            <article class="filmelist filme">
+              <a href="info.html?id=theLionKing">
+                <img
+                  src="assets/img/pastafilmes/rei-leao.jpg"
+                  alt="Filme: O Rei Leão"
+                />
+                <h3>O Rei Leão</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="acao crime suspense">
+            <article class="filmelist filme">
+              <a href="info.html?id=velozesEFuriosos7">
+                <img
+                  src="assets/img/pastafilmes/velozes-e-furiososserven.jpg"
+                  alt="Filme: Velozes e Furiosos 7"
+                />
+                <h3>Velozes e Furiosos 7</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="animacao aventura familia fantasia">
+            <article class="filmelist filme">
+              <a href="info.html?id=frozen">
+                <img
+                  src="assets/img/pastafilmes/frozen.jpg"
+                  alt="Filme: Frozen"
+                />
+                <h3>Frozen</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="comedia aventura fantasia">
+            <article class="filmelist filme">
+              <a href="info.html?id=barbie">
+                <img
+                  src="assets/img/pastafilmes/barbie.jpg"
+                  alt="Filme: Barbie"
+                />
+                <h3>Barbie</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="animacao aventura comedia familia">
+            <article class="filmelist filme">
+              <a href="info.html?id=superMarioBrosMovie">
+                <img
+                  src="assets/img/pastafilmes/mario.jpg"
+                  alt="Filme: Super Mario Bros."
+                />
+                <h3>Super Mario Bros</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="fantasia aventura misterio">
+            <article class="filmelist filme">
+              <a href="info.html?id=harryPotterReliquiasDaMorteParte2">
+                <img
+                  src="assets/img/pastafilmes/harry-potter-serven-parte-two.jpg"
+                  alt="Filme: Harry Potter e as Relíquias da Morte 2"
+                />
+                <h3>Harry Potter 7: Parte 2</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="sci-fi drama aventura">
+            <article class="filmelist filme">
+              <a href="info.html?id=interstellar">
+                <img
+                  src="assets/img/pastafilmes/interestelar.jpg"
+                  alt="Filme: Interestelar"
+                />
+                <h3>Interestelar</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="animacao aventura comedia familia">
+            <article class="filmelist filme">
+              <a href="info.html?id=minions">
+                <img
+                  src="assets/img/pastafilmes/minions.jpg"
+                  alt="Filme: Minions"
+                />
+                <h3>Minions</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="animacao aventura familia comedia">
+            <article class="filmelist filme">
+              <a href="info.html?id=toyStory4">
+                <img
+                  src="assets/img/pastafilmes/toy-story-four.jpg"
+                  alt="Filme: Toy Story 4"
+                />
+                <h3>Toy Story 4</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="drama historico biografia">
+            <article class="filmelist filme">
+              <a href="info.html?id=oppenheimer">
+                <img
+                  src="assets/img/pastafilmes/oppenheimer.jpg"
+                  alt="Filme: Oppenheimer"
+                />
+                <h3>Oppenheimer</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="sci-fi acao">
+            <article class="filmelist filme">
+              <a href="info.html?id=matrix">
+                <img
+                  src="assets/img/pastafilmes/matrix.jpg"
+                  alt="Filme: Matrix"
+                />
+                <h3>Matrix</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="suspence acao">
+            <article class="filmelist filme">
+              <a href="info.html?id=johnWick">
+                <img
+                  src="assets/img/pastafilmes/jonh-wick.jpg"
+                  alt="Filme: John Wick: De Volta ao Jogo"
+                />
+                <h3>John Wick: De Volta ao Jogo</h3>
+              </a>
+            </article>
+          </li>
+
+          <li class="filme-item" data-genre="suspence Terror misterio">
+            <article class="filmelist filme">
+              <a href="info.html?id=screamserven">
+                <img
+                  src="assets/img/pastafilmes/screamserven.jpg"
+                  alt="Filme: Pânico 7"
+                />
+                <h3>Pânico 7</h3>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/ui.js"></script>
+    
+    <script>
+      verificarAutenticacao();
+      renderizarPerfilNoTopo();
+    </script>
+  </body>
+</html>
