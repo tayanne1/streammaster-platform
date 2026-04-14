@@ -1,22 +1,11 @@
-/* ===============================================
-   FILMES PAGE - GRID LAYOUT
-   Reutiliza global.css e home.css
-   Override: carrossel → grid
-   =============================================== */
 
-/* Remove o comportamento de carrossel e ativa grid */
-
-.cabecalho.filmes {
+/* .cabecalho.filmes {
   width: 100%;
   height: auto; 
   position: static;
-  top: 0px;}
+  top: 0px;} */
 
-/* ============================================================
-   ESTILO DA SEÇÃO DE CATÁLOGO (FILMES E SÉRIES)
-   ============================================================ */
 
-/* Ajuste do Título da Página */
 .filmes-titulo {
   margin-top: 40px; /* Para não ficar escondido atrás do header fixo */
   text-transform: uppercase;

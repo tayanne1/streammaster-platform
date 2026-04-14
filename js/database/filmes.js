@@ -1,12 +1,14 @@
 // BANCO DE DADOS DOS FILMES
 const filmes = {
-  deadpooltwo: {
+"deadpool_2": {
+  id: "deadpool_2",
   titulo: "Deadpool 2",
   imagem: "assets/img/pastafilmes/deadpooltwo.jpg",
   capa: "/assets/img/deadpoolcapa3.png", // troca se tiver local
   tempo: "2h 00min",
   ano: "2018",
   genero: ["Ação", "Comédia", "Sci-Fi"],
+  dataGenre: "acao comedia sci-fi heroi",
   descricao: "Wade Wilson, o irreverente mercenário conhecido como Deadpool, tenta encontrar um novo propósito após uma perda devastadora. Quando um jovem mutante com habilidades perigosas se torna alvo de Cable, um soldado vindo do futuro, Deadpool decide agir. Para protegê-lo, ele reúne um grupo improvável de heróis — a X-Force — e embarca em uma missão caótica, violenta e cheia de humor ácido, onde terá que aprender, à sua própria maneira, o verdadeiro significado de família.",
 
   elenco: [
@@ -86,13 +88,15 @@ const filmes = {
   ]
 },
 
-  superman: {
+"superman": {
+  id: "superman",
     titulo: "Superman",
     imagem: "https://i.pinimg.com/736x/d4/55/e2/d455e222e4c605f8ef678f1f8a433454.jpg",
     capa: "/assets/img/capa/supercapa1.png",
     tempo: "2h 28min",
     ano: "2025",
     genero: ["Ação", "Aventura", "Sci-Fi"],
+    dataGenre: "acao aventura  sci-fi heroi",
     descricao: "Clark Kent assume seu papel como Superman e enfrenta Lex Luthor.",
     
     elenco: [
@@ -108,11 +112,11 @@ const filmes = {
     ator: "Nicholas Hoult",
     personagem: "Lex Luthor"
   }
-  ],
+   ],
 
     trailer: {
-  url: "https://www.youtube.com/embed/OfpXgjP4AOs?si=CSgPiSLEhvztvY16",
-  info: [
+   url: "https://www.youtube.com/embed/OfpXgjP4AOs?si=CSgPiSLEhvztvY16",
+   info: [
       { titulo: "Director", valor: "James Gunn" },
       { titulo: "Writers", valor: "James Gunn • Jerry Siegel • Joe Shuster" },
       { titulo: "Languages Available", valor: "English, Portuguese (BR), Spanish, French" },
@@ -179,15 +183,17 @@ const filmes = {
       { titulo: "Shazam!", ano: "2019" },
       { titulo: "Green Lantern: Rebirth", ano: "Upcoming" }
     ]
-  },
+},
 
-  sinners: {
+"sinners": {
+  id: "sinners",
   titulo: "Sinners",
   imagem: "assets/img/pastafilmes/sinners.jpg", // troca se quiser
   capa: "/assets/img/capa/sinners-capa.jpg", //  capa: "assets/img/capa/sinners-capa.jpg", 
   tempo: "2h 17min",
   ano: "2025",
   genero: ["Terror", "Suspense", "Drama"],
+  dataGenre: "terror suspense  drama",
 
   descricao: "Dois irmãos gêmeos retornam à cidade onde cresceram tentando recomeçar suas vidas após um passado marcado por violência e erros. No entanto, ao se envolverem com uma comunidade local aparentemente comum, eles descobrem a presença de uma força sombria e sobrenatural que se alimenta dos pecados humanos. À medida que segredos vêm à tona, os irmãos são obrigados a confrontar não apenas a ameaça externa, mas também suas próprias culpas, em uma luta intensa por redenção e sobrevivência.",
 
@@ -268,14 +274,15 @@ const filmes = {
   ]
 },
 
-peaky_blinders: {
+"peaky_blinders:_the_immortal_man": {
+  id: "peaky_blinders:_the_immortal_man",
   titulo: "Peaky Blinders: The Immortal Man",
   imagem: "assets/img/pastafilmes/peaky-blinders-theimmortalman.jpg", 
   capa: "/assets/img/capa/peakyblinderscapa2.jpg",
   tempo: "1h 52min",  
   ano: "2026",
-  genero: ["Crime", "Drama", "Guerra"],
-
+  genero: ["Crime", "Drama", "Historico"],
+  dataGenre: "crime drama historico acao",
   descricao: "Durante a Segunda Guerra Mundial, Tommy Shelby retorna do isolamento para enfrentar uma conspiração que ameaça o Reino Unido. Enquanto lida com seus próprios demônios e o peso do passado, ele precisa proteger sua família e impedir um plano nazista que pode destruir a economia do país.",
 
   elenco: [
@@ -359,14 +366,15 @@ peaky_blinders: {
   ]
 },
 
-ready_or_not_2: {
+"ready_or_not_2:_here_i_come": {
+  id: "ready_or_not_2:_here_i_come",
   titulo: "Ready or Not 2: Here I Come",
   imagem: "assets/img/pastafilmes/readyorNotTwo.jpg",
   capa: "/assets/img/capa/ready-or-nottwo-capa.jpg",
   tempo: "1h 48min",
   ano: "2026",
   genero: ["Terror", "Comédia", "Suspense"],
-
+  dataGenre: "terror suspence comedia misterio",
   descricao: "Após sobreviver ao massacre da família Le Domas, Grace acredita que finalmente está livre do pesadelo. No entanto, ela descobre que o jogo mortal faz parte de algo muito maior. Ao lado de sua irmã afastada, Grace é arrastada para um novo ritual envolvendo famílias poderosas que disputam um trono de influência global. Agora, ela precisa sobreviver mais uma vez enquanto é caçada em uma corrida contra o tempo até o amanhecer.",
 
   elenco: [
@@ -450,14 +458,15 @@ ready_or_not_2: {
   ]
 },
 
-luca: {
+"luca": {
+  id: "luca",
   titulo: "Luca",
   imagem: "assets/img/pastafilmes/luca.jpg",
   capa: "/assets/img/capa/lucacapa.jpg",
   tempo: "1h 35min",
   ano: "2021",
   genero: ["Animação", "Aventura", "Família"],
-
+  dataGenre: "kids animacao familia aventura",
   descricao: "Em uma pequena cidade litorânea da Itália, Luca, um jovem monstro marinho curioso, descobre um mundo completamente novo ao sair da água e assumir forma humana. Ao lado de seu amigo Alberto, ele vive um verão inesquecível cheio de liberdade, amizade e descobertas, enquanto tenta esconder sua verdadeira identidade dos humanos que temem criaturas como ele.",
 
   elenco: [
@@ -537,13 +546,15 @@ luca: {
   ]
 },
 
-projecthailmary: {
+"project_hail_mary": {
+  id: "project_hail_mary",
   titulo: "Project Hail Mary",
   imagem: "assets/img/pastafilmes/ProjectHailMary.jpg", 
   capa: "/assets/img/capa/project-hail-mary-capa.jpg", 
   tempo: "2h 30min",
   ano: "2026",
   genero: ["Sci-Fi", "Drama", "Aventura"],
+  dataGenre: "sci-fi aventura drama",
   descricao: "Um professor de ciências acorda sozinho em uma nave espacial sem memória de quem é ou como chegou ali. Aos poucos, ele descobre que é a última esperança da humanidade para impedir a extinção do Sol — e que precisará usar toda sua inteligência para salvar a Terra, enfrentando desafios impossíveis e uma missão solitária no espaço profundo.",
 
   elenco: [
@@ -604,7 +615,8 @@ projecthailmary: {
 },
 
 
-oneBattleAfterAnother: {
+"one_battle_after_another": {
+  id: "one_battle_after_another",
   titulo: "One Battle After Another",
   imagem: "assets/img/pastafilmes/one-battle-after-another.jpg", // troca depois por uma capa melhor
   capa: "/assets/img/capa/one-battle-after-another-capa.jpg", // coloca no seu projeto
@@ -612,7 +624,7 @@ oneBattleAfterAnother: {
   tempo: "2h 30min", // estimado (ainda não confirmado oficialmente)
   ano: "2025",
   genero: ["Drama", "Guerra"],
-
+  dataGenre: "acao suspence comedia drama",
   descricao: "Durante um período de conflitos intensos, um grupo de soldados enfrenta batalhas consecutivas que testam não apenas sua resistência física, mas também seus limites emocionais e morais. Em meio ao caos da guerra, cada decisão pode significar sobrevivência ou perda, revelando o verdadeiro custo de lutar por um ideal.",
 
   elenco: [
@@ -680,7 +692,8 @@ oneBattleAfterAnother: {
   ]
 },
 
-hoppers: {
+"hoppers": {
+  id: "hoppers",
   titulo: "Hoppers",
   imagem: "assets/img/pastafilmes/hoppers.jpg", // troque depois
   capa: "/assets/img/capa/hoppers-capa.jpg", // ajuste no seu projeto
@@ -688,7 +701,7 @@ hoppers: {
   tempo: "1h 40min", // estimado
   ano: "2026",
   genero: ["Animação", "Comédia", "Aventura"],
-
+  dataGenre: "kids familia comedia aventura animacao",
   descricao: "Uma jovem descobre uma tecnologia revolucionária que permite transferir a consciência humana para corpos robóticos de animais. Ao explorar esse novo mundo, ela embarca em uma aventura inesperada, enfrentando desafios que colocam em risco o equilíbrio entre humanos, natureza e tecnologia.",
 
   elenco: [
@@ -748,13 +761,15 @@ hoppers: {
   ]
 },
 
-war_machine: {
+"war_machine": {
+  id: "war_machine",
   titulo: "War Machine",
   imagem: "assets/img/pastafilmes/war-machine.jpg",
   capa: "/assets/img/capa/war-machine-capa.jpg", // ajuste para o caminho real
   tempo: "1h 46min",
   ano: "2026",
   genero: ["Ação, Ficção Científica, Suspense"],
+  dataGenre: "acao sci-fi misterio suspence",
   descricao: "Máquina de Guerra acompanha os membros do exército de elite dos Estados Unidos da América, os Rangers, após o exaustivo processo seletivo para a unidade especial. Responsáveis pelas missões mais perigosas do mundo, eles são colocados cara a cara com uma ameaça além da imaginação deles. De forma inesperada, uma força extraterrestre complica ainda mais a vida deles. Estrelado por Alan Ritchson, a trama fictícia envolve o público em um suspense surpreendente.",
 
   elenco: [
@@ -837,22 +852,24 @@ war_machine: {
 },
 
 
-remindersOfHim: {
-    titulo: "Reminders of Him",
-    imagem: "assets/img/pastafilmes/reminders-of-him.jpg",
-    capa: "/assets/img/capa/reminders-of-him-capa.jpg",
-    tempo: "1h 52min",
-    ano: "2026",
-    genero: ["Drama", "Romance"],
-    descricao: "Após cumprir pena por um trágico erro, Kenna Rowan retorna à cidade onde tudo deu errado, na esperança de se reencontrar com sua filha de quatro anos.",
+"reminders_of_him": {
+  id: "reminders_of_him",
+  titulo: "Reminders of Him",
+  imagem: "assets/img/pastafilmes/reminders-of-him.jpg",
+  capa: "/assets/img/capa/reminders-of-him-capa.jpg",
+  tempo: "1h 52min",
+  ano: "2026",
+  genero: ["Drama", "Romance"],
+  dataGenre: "romance drama",
+  descricao: "Após cumprir pena por um trágico erro, Kenna Rowan retorna à cidade onde tudo deu errado, na esperança de se reencontrar com sua filha de quatro anos.",
     
-    elenco: [
-      {
-        ator: "Maika Monroe",
-        personagem: "Kenna Rowan"
-      },
-      {
-        ator: "Dacre Montgomery",
+  elenco: [
+    {
+     ator: "Maika Monroe",
+     personagem: "Kenna Rowan"
+    },
+    {
+      ator: "Dacre Montgomery",
         personagem: "Ledger Ward"
       },
       {
@@ -932,13 +949,15 @@ remindersOfHim: {
     ]
 },
 
-avatar: {
+"avatar": {
+  id: "avatar",
     titulo: "Avatar",
     imagem: "assets/img/pastafilmes/avatar.jpg", // Exemplo de URL de poster
     capa: "/assets/img/capa/avatar-capa.jpg",
     tempo: "2h 42min",
     ano: "2009",
     genero: ["Ação", "Aventura", "Fantasia", "Sci-Fi"],
+    dataGenre: "sci-fi aventura acao fantasia",
     descricao: "No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem primitivos, mas são altamente evoluídos. Um ex-fuzileiro naval paraplégico é enviado em uma missão única, mas fica dividido entre seguir ordens e proteger o mundo que ele sente ser seu lar.",
     
     elenco: [
@@ -1031,13 +1050,15 @@ avatar: {
     ]
 },
 
-avengersEndgame: {
+"vingadores:_ultimato": {
+  id: "vingadores:_ultimato",
     titulo: "Vingadores: Ultimato",
     imagem: "assets/img/pastafilmes/vingadores-endgame.jpg", 
     capa: "/assets/img/capa/vingadores-capa.jpg",
     tempo: "3h 01min",
     ano: "2019",
     genero: ["Ação", "Aventura", "Sci-Fi"],
+    dataGenre: "sci-fi aventura acao heroi",
     descricao: "Após Thanos eliminar metade de toda a vida no universo, os Vingadores restantes devem se reunir uma última vez para desfazer as ações do Titã Louco e restaurar a ordem no cosmos.",
     
     elenco: [
@@ -1138,13 +1159,15 @@ avengersEndgame: {
     ]
 },
 
-titanic: {
+"titanic": {
+  id: "titanic",
     titulo: "Titanic",
     imagem: "assets/img/pastafilmes/titanic.jpg", 
     capa: "/assets/img/capa/titanic-capa.jpg",
     tempo: "3h 14min",
     ano: "1997",
     genero: ["Drama", "Romance"],
+    dataGenre: "romance drama historico",
     descricao: "Um artista pobre e uma jovem aristocrata se apaixonam a bordo do luxuoso e infame R.M.S. Titanic, sem saber que a embarcação está prestes a colidir com um iceberg no Atlântico Norte.",
     
     elenco: [
@@ -1237,13 +1260,15 @@ titanic: {
     ]
 },
 
-avatar2: {
+"avatar2": {
+  id: "avatar2",
     titulo: "Avatar: O Caminho da Água",
     imagem: "assets/img/pastafilmes/avatar-caminho-das-aguas.jpg", 
     capa: "/assets/img/capa/avatar-caminho-das-aguas-capa.jpg",
     tempo: "3h 12min",
     ano: "2022",
     genero: ["Ação", "Aventura", "Fantasia", "Sci-Fi"],
+    dataGenre: "sci-fi aventura acao fantasia",
     descricao: "Mais de uma década após os eventos do primeiro filme, Jake Sully e Neytiri formaram uma família. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, forçando Jake a travar uma guerra difícil contra os humanos.",
     
     elenco: [
@@ -1340,13 +1365,15 @@ avatar2: {
     ]
 },
 
-avengersInfinityWar: {
+"vingadores:_guerra_infinita": {
+  id: "vingadores:_guerra_infinita",
     titulo: "Vingadores: Guerra Infinita",
     imagem: "assets/img/pastafilmes/vingadores-guerra-infinita.jpg", 
     capa: "/assets/img/capa/vingadores-infinity-war-capa.jpg",
     tempo: "2h 29min",
     ano: "2018",
     genero: ["Ação", "Aventura", "Sci-Fi"],
+    dataGenre: "acao aventura sci-fi heroi",
     descricao: "Os Vingadores e seus aliados devem estar dispostos a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que seu ataque de devastação e ruína coloque um fim ao universo.",
     
     elenco: [
@@ -1447,13 +1474,15 @@ avengersInfinityWar: {
     ]
 },
 
-homemAranhaSemVoltaParaCasa: {
+"homem-aranha:_sem_volta_para_casa": {
+  id: "homem-aranha:_sem_volta_para_casa",
     titulo: "Homem-Aranha: Sem Volta para Casa",
     imagem: "assets/img/pastafilmes/homem-aranha-sem-volta-para-casa.jpg",
     capa: "/assets/img/capa/homem-aranha-sem-volta-para-casa-capa.jpg",
     tempo: "2h 28min",
     ano: "2021",
     genero: ["Ação", "Aventura", "Sci-Fi"],
+    dataGenre: "acao aventura sci-fi fantasia heroi",
     descricao: "Com a identidade de Homem-Aranha revelada, Peter Parker pede ajuda ao Doutor Estranho. Quando um feitiço corre mal, vilões perigosos de outros mundos começam a aparecer, forçando Peter a descobrir o que realmente significa ser o Homem-Aranha.",
     
     elenco: [
@@ -1554,13 +1583,15 @@ homemAranhaSemVoltaParaCasa: {
     ]
 },
 
-theLionKing: {
+"o_rei_leão": {
+  id: "o_rei_leão",
     titulo: "O Rei Leão",
     imagem: "assets/img/pastafilmes/rei-leao.jpg", 
     capa: "/assets/img/capa/rei-leao-capa.jpg",
     tempo: "1h 28min",
     ano: "1994",
     genero: ["Animação", "Aventura", "Drama", "Musical"],
+    dataGenre: "animacao aventura familia drama musical",
     descricao: "Enganado pelo tio sobre a morte de seu pai, o jovem príncipe leão Simba foge de seu reino para aprender o verdadeiro significado de responsabilidade e bravura antes de retornar para reivindicar seu trono.",
     
     elenco: [
@@ -1657,13 +1688,15 @@ theLionKing: {
     ]
 },
 
-velozesEFuriosos7: {
+"velozes_e_furiosos_7": {
+  id: "velozes_e_furiosos_7",
     titulo: "Velozes e Furiosos 7",
     imagem: "assets/img/pastafilmes/velozes-e-furiososserven.jpg", 
     capa: "/assets/img/capa/velozes-e-furiososserven-capa.jpg",
     tempo: "2h 17min",
     ano: "2015",
     genero: ["Ação", "Suspense", "Aventura"],
+    dataGenre: "acao crime suspense",
     descricao: "Após derrotarem Owen Shaw, Dominic Toretto, Brian O'Conner e o resto da equipe retornam aos EUA para uma vida normal. No entanto, o irmão mais velho de Owen, Deckard Shaw, busca vingança, colocando toda a família em perigo novamente.",
     
     elenco: [
@@ -1764,13 +1797,15 @@ velozesEFuriosos7: {
     ]
 },
 
-frozen: {
+"frozen": {
+  id: "frozen",
     titulo: "Frozen: Uma Aventura Congelante",
     imagem: "assets/img/pastafilmes/frozen.jpg", 
     capa: "/assets/img/capa/frozen-capa.jpg",
     tempo: "1h 42min",
     ano: "2013",
     genero: ["Animação", "Aventura", "Família", "Musical"],
+    dataGenre: "animacao aventura familia fantasia musical",
     descricao: "A destemida e otimista Anna parte em uma jornada épica ao lado do alpinista Kristoff e sua leal rena Sven para encontrar sua irmã Elsa, cujos poderes gelados prenderam o reino de Arendelle em um inverno eterno.",
     
     elenco: [
@@ -1867,120 +1902,124 @@ frozen: {
     ]
 },
 
-barbie: {
-    titulo: "Barbie",
-    imagem: "assets/img/pastafilmes/barbie.jpg", 
-    capa: "/assets/img/capa/barbie-capa.jpg",
-    tempo: "1h 54min",
-    ano: "2023",
-    genero: ["Comédia", "Fantasia", "Aventura"],
-    descricao: "Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos que perfeita, Barbie parte para o mundo real em busca da verdadeira felicidade, acompanhada por um Ken em crise existencial.",
-    
-    elenco: [
-      {
-        ator: "Margot Robbie",
-        personagem: "Barbie Estereotipada"
-      },
-      {
-        ator: "Ryan Gosling",
-        personagem: "Ken"
-      },
-      {
-        ator: "America Ferrera",
-        personagem: "Gloria"
-      },
-      {
-        ator: "Kate McKinnon",
-        personagem: "Barbie Estranha"
-      },
-      {
-        ator: "Will Ferrell",
-        personagem: "CEO da Mattel"
-      },
-      {
-        ator: "Simu Liu",
-        personagem: "Ken Alternativo"
-      }
+"barbie": {
+  id: "barbie",
+  titulo: "Barbie",
+  imagem: "assets/img/pastafilmes/barbie.jpg", 
+  capa: "/assets/img/capa/barbie-capa.jpg",
+  tempo: "1h 54min",
+  ano: "2023",
+  genero: ["Comédia", "Fantasia", "Aventura"],
+  dataGenre: "comedia aventura fantasia",
+  descricao: "Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos que perfeita, Barbie parte para o mundo real em busca da verdadeira felicidade, acompanhada por um Ken em crise existencial.",
+  
+  elenco: [
+    {
+      ator: "Margot Robbie",
+      personagem: "Barbie Estereotipada"
+    },
+    {
+      ator: "Ryan Gosling",
+      personagem: "Ken"
+    },
+    {
+      ator: "America Ferrera",
+      personagem: "Gloria"
+    },
+    {
+      ator: "Kate McKinnon",
+      personagem: "Barbie Estranha"
+    },
+    {
+      ator: "Will Ferrell",
+      personagem: "CEO da Mattel"
+    },
+    {
+      ator: "Simu Liu",
+      personagem: "Ken Alternativo"
+    }
+  ],
+
+  trailer: {
+    url: "https://www.youtube.com/embed/pBk4NYhWNMM", 
+    info: [
+      { titulo: "Diretora", valor: "Greta Gerwig" },
+      { titulo: "Roteiristas", valor: "Greta Gerwig • Noah Baumbach" },
+      { titulo: "Idiomas Disponíveis", valor: "Inglês, Português (BR), Espanhol, Francês" },
+      { titulo: "Legendas", valor: "20+ idiomas" }
+    ]
+  },
+
+  sobre: {
+    info: [
+      { titulo: "Estúdio", valor: "Warner Bros. Pictures • LuckyChap" },
+      { titulo: "Franquia", valor: "Barbie (Live-Action)" },
+      { titulo: "Prêmios", valor: "Vencedor de 1 Oscar (Melhor Canção Original)" },
+      { titulo: "Idioma Original", valor: "Inglês" },
+      { titulo: "Distribuição", valor: "Max (HBO) • Prime Video" }
     ],
 
-    trailer: {
-      url: "https://www.youtube.com/embed/pBk4NYhWNMM", 
-      info: [
-        { titulo: "Diretora", valor: "Greta Gerwig" },
-        { titulo: "Roteiristas", valor: "Greta Gerwig • Noah Baumbach" },
-        { titulo: "Idiomas Disponíveis", valor: "Inglês, Português (BR), Espanhol, Francês" },
-        { titulo: "Legendas", valor: "20+ idiomas" }
-      ]
-    },
-
-    sobre: {
-      info: [
-        { titulo: "Estúdio", valor: "Warner Bros. Pictures • LuckyChap" },
-        { titulo: "Franquia", valor: "Barbie (Live-Action)" },
-        { titulo: "Prêmios", valor: "Vencedor de 1 Oscar (Melhor Canção Original)" },
-        { titulo: "Idioma Original", valor: "Inglês" },
-        { titulo: "Distribuição", valor: "Max (HBO) • Prime Video" }
-      ],
-
-      funFacts: [
-        "A produção do filme causou uma escassez global de tinta rosa fluorescente da marca Rosco.",
-        "Margot Robbie instituiu 'dias de rosa' no set, onde quem não usasse a cor recebia uma multa simbólica doada para caridade.",
-        "O design da Barbieland foi inspirado na arquitetura de Palm Springs e nas 'Casas de Sonho' clássicas da Mattel." 
-      ]
-    },
-
-    resenha: {
-      nota: "⭐ 4.7 / 5 — Baseado em 1.100.000+ avaliações",
-
-      reviews: [
-        {
-          autor: "Omelete",
-          texto: "Inteligente, satírico e visualmente impecável. Greta Gerwig entregou muito mais que um filme de boneca."
-        },
-        {
-          autor: "AdoroCinema",
-          texto: "Margot Robbie nasceu para esse papel, mas Ryan Gosling como Ken é a alma cômica do filme."
-        },
-        {
-          autor: "CinePOP",
-          texto: "Um roteiro profundo que aborda temas existenciais com leveza e muito rosa. Inesquecível."
-        },
-        {
-          autor: "barbie_fan_br",
-          texto: "Eu chorei com o monólogo da America Ferrera. O filme entende o que é ser mulher hoje."
-        },
-        {
-          autor: "geek_reviewer",
-          texto: "A trilha sonora da Dua Lipa e Billie Eilish é simplesmente perfeita para o tom do filme."
-        },
-        {
-          autor: "ken_energy_23",
-          texto: "Eu sou apenas Ken! A coreografia de I'm Just Ken é a melhor coisa que vi no cinema esse ano."
-        },
-        {
-          autor: "critico_indie",
-          texto: "Uma obra de arte que consegue equilibrar o comercial com o autoral de forma brilhante."
-        }
-      ]
-    },
-
-    mas: [
-      { titulo: "Little Women", ano: "2019" },
-      { titulo: "Lady Bird", ano: "2017" },
-      { titulo: "The LEGO Movie", ano: "2014" },
-      { titulo: "Enchanted", ano: "2007" },
-      { titulo: "Clueless", ano: "1995" },
-      { titulo: "Oppenheimer", ano: "2023" }
+    funFacts: [
+      "A produção do filme causou uma escassez global de tinta rosa fluorescente da marca Rosco.",
+      "Margot Robbie instituiu 'dias de rosa' no set, onde quem não usasse a cor recebia uma multa simbólica doada para caridade.",
+      "O design da Barbieland foi inspirado na arquitetura de Palm Springs e nas 'Casas de Sonho' clássicas da Mattel." 
     ]
+  },
+
+  resenha: {
+    nota: "⭐ 4.7 / 5 — Baseado em 1.100.000+ avaliações",
+
+    reviews: [
+      {
+        autor: "Omelete",
+        texto: "Inteligente, satírico e visualmente impecável. Greta Gerwig entregou muito mais que um filme de boneca."
+      },
+      {
+        autor: "AdoroCinema",
+        texto: "Margot Robbie nasceu para esse papel, mas Ryan Gosling como Ken é a alma cômica do filme."
+      },
+      {
+        autor: "CinePOP",
+        texto: "Um roteiro profundo que aborda temas existenciais com leveza e muito rosa. Inesquecível."
+      },
+      {
+        autor: "barbie_fan_br",
+        texto: "Eu chorei com o monólogo da America Ferrera. O filme entende o que é ser mulher hoje."
+      },
+      {
+        autor: "geek_reviewer",
+        texto: "A trilha sonora da Dua Lipa e Billie Eilish é simplesmente perfeita para o tom do filme."
+      },
+      {
+        autor: "ken_energy_23",
+        texto: "Eu sou apenas Ken! A coreografia de I'm Just Ken é a melhor coisa que vi no cinema esse ano."
+      },
+      {
+        autor: "critico_indie",
+        texto: "Uma obra de arte que consegue equilibrar o comercial com o autoral de forma brilhante."
+      }
+    ]
+  },
+
+  mas: [
+    { titulo: "Little Women", ano: "2019" },
+    { titulo: "Lady Bird", ano: "2017" },
+    { titulo: "The LEGO Movie", ano: "2014" },
+    { titulo: "Enchanted", ano: "2007" },
+    { titulo: "Clueless", ano: "1995" },
+    { titulo: "Oppenheimer", ano: "2023" }
+  ]
 },
 
-superMarioBrosMovie: {
+"super_mario_bros._o_filme": {
+  id: "super_mario_bros._o_filme",
     titulo: "Super Mario Bros. O Filme",
     imagem: "assets/img/pastafilmes/mario.jpg", 
     capa: "/assets/img/capa/capa-mario1.jpg",
     tempo: "1h 32min",
     ano: "2023",
     genero: ["Animação", "Aventura", "Comédia", "Fantasia"],
+    dataGenre: "animacao aventura comedia familia",
     descricao: "Os irmãos encanadores Mario e Luigi são transportados para um mundo mágico. Quando Luigi é capturado pelo Rei dos Koopas, Bowser, Mario deve se unir à Princesa Peach e ao exército de Toads para salvar seu irmão e o Reino Cogumelo.",
     
     elenco: [
@@ -2081,13 +2120,15 @@ superMarioBrosMovie: {
     ]
 },
 
-harryPotterReliquiasDaMorteParte2: {
+"harry_potter_e_as_relíquias_da_morte:_parte_2": {
+  id: "harry_potter_e_as_relíquias_da_morte:_parte_2",
     titulo: "Harry Potter e as Relíquias da Morte: Parte 2",
     imagem: "assets/img/pastafilmes/harry-potter-serven-parte-two.jpg", 
     capa: "/assets/img/capa/harry-potter-serven-parte-two-capa.jpg",
     tempo: "2h 10min",
     ano: "2011",
     genero: ["Aventura", "Fantasia", "Mistério"],
+    dataGenre: "fantasia aventura misterio",
     descricao: "Harry, Ron e Hermione continuam sua busca pelas Horcruxes de Voldemort. A batalha final entre as forças do bem e do mal no mundo bruxo culmina em uma guerra épica dentro dos muros de Hogwarts.",
     
     elenco: [
@@ -2188,13 +2229,15 @@ harryPotterReliquiasDaMorteParte2: {
     ]
 },
 
-interstellar: {
+"interstellar": {
+  id: "interstellar",
     titulo: "Interestelar",
     imagem: "assets/img/pastafilmes/interestelar.jpg", 
     capa: "/assets/img/capa/interestela-capa.jpg",
     tempo: "2h 49min",
     ano: "2014",
     genero: ["Ficção Científica", "Drama", "Aventura"],
+    dataGenre: "sci-fi drama aventura",
     descricao: "As reservas naturais da Terra estão se esgotando. Um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, passando por um buraco de minhoca recém-descoberto.",
     
     elenco: [
@@ -2295,13 +2338,15 @@ interstellar: {
     ]
 },
 
-minions: {
+"minions": {
+  id: "minions",
     titulo: "Minions",
     imagem: "assets/img/pastafilmes/minions.jpg", 
     capa: "/assets/img/capa/minions-capa.jpg",
     tempo: "1h 31min",
     ano: "2015",
     genero: ["Animação", "Aventura", "Comédia", "Família"],
+    dataGenre: "animacao aventura comedia familia",
     descricao: "Seres amarelos unicelulares e milenares, os Minions têm uma missão: servir aos maiores vilões da história. Após a morte de seu antigo mestre, eles tentam encontrar um novo chefe e acabam recrutados pela terrível Scarlet Overkill.",
     
     elenco: [
@@ -2402,13 +2447,15 @@ minions: {
     ]
 },
 
-toyStory4: {
+"toy_story_4": {
+  id: "toy_story_4",
     titulo: "Toy Story 4",
     imagem: "assets/img/pastafilmes/toy-story-four.jpg", 
     capa: "/assets/img/capa/toy-story-four-capa.jpg",
     tempo: "1h 40min",
     ano: "2019",
     genero: ["Animação", "Aventura", "Comédia", "Família"],
+    dataGenre: "animacao aventura familia comedia",
     descricao: "Woody, Buzz Lightyear e o resto da gangue embarcam em uma viagem de estrada com Bonnie e um novo brinquedo chamado Garfinho. A jornada se transforma em uma reunião inesperada quando o desvio de Woody o leva ao seu antigo amigo Bo Peep.",
     
     elenco: [
@@ -2509,13 +2556,15 @@ toyStory4: {
     ]
 },
 
-oppenheimer: {
+"oppenheimer": {
+  id: "oppenheimer",
     titulo: "Oppenheimer",
     imagem: "assets/img/pastafilmes/oppenheimer.jpg", 
     capa: "/assets/img/capa/oppenheimer-capa.jpg",
     tempo: "3h 00min",
     ano: "2023",
     genero: ["Biografia", "Drama", "História"],
+    dataGenre: "drama historico biografia",
     descricao: "A história do físico americano J. Robert Oppenheimer e seu papel no Projeto Manhattan, o esforço secreto da Segunda Guerra Mundial para desenvolver as primeiras armas nucleares do mundo.",
     
     elenco: [
@@ -2616,13 +2665,15 @@ oppenheimer: {
     ]
 },
 
-matrix: {
+"matrix": {
+  id: "matrix",
     titulo: "Matrix",
     imagem: "assets/img/pastafilmes/matrix.jpg", 
     capa: "/assets/img/capa/matrix-capa.jpg",
     tempo: "2h 16min",
     ano: "1999",
     genero: ["Ação", "Sci-Fi"],
+    dataGenre: "sci-fi acao",
     descricao: "Um programador de computador descobre que o mundo em que vive é na verdade uma simulação virtual criada por máquinas para escravizar a humanidade. Ele se junta a um grupo de rebeldes para lutar pela liberdade.",
     
     elenco: [
@@ -2719,13 +2770,15 @@ matrix: {
     ]
 },
 
-johnWick: {
+"john_wick:_de_volta_ao_jogo": {
+  id: "john_wick:_de_volta_ao_jogo",
     titulo: "John Wick: De Volta ao Jogo",
     imagem: "assets/img/pastafilmes/jonh-wick.jpg", 
     capa: "/assets/img/capa/jonh-wick-capa.jpg",
     tempo: "1h 41min",
     ano: "2014",
     genero: ["Ação", "Suspense"],
+    dataGenre: "suspence acao",
     descricao: "Um ex-assassino de aluguel sai da aposentadoria para caçar os gângsteres que mataram seu cachorro e roubaram tudo o que ele tinha de mais precioso, desencadeando uma vingança implacável.",
     
     elenco: [
@@ -2826,13 +2879,15 @@ johnWick: {
     ]
 },
 
-screamserven: {
+"pânico_7": {
+  id: "pânico_7",
     titulo: "Pânico 7",
     imagem: "assets/img/pastafilmes/screamserven.jpg", 
     capa: "/assets/img/capa/screamserven-capa.jpg",
     tempo: "Em definição",
     ano: "2026",
     genero: ["Terror", "Slasher", "Mistério"],
+    dataGenre: "suspence Terror misterio slasher",
     descricao: "Sidney Prescott retorna ao centro do terror quando um novo Ghostface emerge com regras inéditas. Após os eventos recentes, o passado e o presente se colidem em uma luta final pela sobrevivência na franquia que redefiniu o gênero meta-horror.",
     
     elenco: [
@@ -2926,125 +2981,3 @@ screamserven: {
 }
 };
 
-
-// PEGAR ID DA URL
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
-
-// VALIDAÇÃO (IMPORTANTE parar execução)
-if (!filmes[id]) {
-  document.body.innerHTML = "<h1>Filme não encontrado</h1>";
-  throw new Error("Filme inválido");
-}
-
-// FILME ATUAL
-const filme = filmes[id];
-
-// ATUALIZAR ELEMENTOS
-document.getElementById("titulo").textContent = filme.titulo;
-document.getElementById("poster").src = filme.imagem;
-
-document.getElementById("meta").innerHTML = `
-  <span>${filme.tempo}</span>
-  <span>${filme.ano}</span>
-  <span>${filme.genero.join(", ")}</span>
-`;
-
-document.getElementById("descricao").textContent = filme.descricao;
-
-// ELENCO
-document.getElementById("elenco").innerHTML = filme.elenco
-  .map(item => `
-    <p class="spacep">
-      <strong class="ator">${item.ator} — </strong>
-      <span class="personagem">${item.personagem}</span>
-    </p>
-  `)
-  .join("");
-
-
-// TRAILER (verifica se existe)
-if (filme.trailer) {
-  // vídeo
-  document.getElementById("trailer").src = filme.trailer.url;
-
-  // infos abaixo
-  document.getElementById("trailerInfo").innerHTML = `
-    <p class="spacep">
-      ${filme.trailer.info
-        .map(item => `
-          <strong class="ator">${item.titulo}:</strong> 
-          <span class="personagem">${item.valor}</span><br>
-        `)
-        .join("")}
-    </p>
-  `;
-}
-
-// SOBRE
-if (filme.sobre) {
-  document.getElementById("sobre").innerHTML = `
-    
-    <p class="spacep">
-      ${filme.sobre.info
-        .map(item => `
-          <strong class="ator">${item.titulo}:</strong> 
-          <span class="personagem">${item.valor}</span><br>
-        `)
-        .join("")}
-    </p>
-
-    <p class="funfact">
-      <strong class="ator">Fun Facts:</strong><br>
-      <span class="personagem">
-        ${filme.sobre.funFacts.join("<br>")}
-      </span>
-    </p>
-
-  `;
-}
-
-// RESENHA
-if (filme.resenha) {
-  document.getElementById("resenha").innerHTML = `
-    
-    <p class="spacep">
-      
-      <strong class="ator">
-        ${filme.resenha.nota}
-      </strong><br>
-
-      ${filme.resenha.reviews
-        .map(item => `
-          <strong class="ator">— ${item.autor}:</strong>
-          <span class="personagem">"${item.texto}"</span><br>
-        `)
-        .join("")}
-
-    </p>
-  `;
-}
-
-// MAIS
-if (filme.mas) {
-  document.getElementById("mas").innerHTML = `
-    
-    <p class="spacep">
-      ${filme.mas
-        .map(item => `
-          <strong class="ator">${item.titulo}</strong> 
-          <span class="personagem">(${item.ano})</span><br>
-        `)
-        .join("")}
-    </p>
-
-  `;
-}
-
-// CAPA
-const container = document.getElementById("container");
-container.style.setProperty("--bg-filme", `url(${filme.capa})`);
-//  container.style.backgroundImage = `url(${filme.capa})`;
-container.style.backgroundSize = "cover";
-container.style.backgroundPosition = "center";
-console.log(filme.capa)

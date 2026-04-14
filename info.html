@@ -34,10 +34,15 @@
         </div>
  
         <ul class="navdireita">
-          <li>
-            <a href="">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
+          <li class="search-container">
+              <a href="#" id="btnBusca">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+
+              <div class="busca" id="boxBusca">
+                <input type="text" id="inputBusca" placeholder="Buscar filmes ou séries..."/>
+                <ul id="resultadosBusca" class="resultados-busca"></ul>
+              </div>
           </li>
           <li class="perfil-usuario" id="perfilAtivo"></li>
         </ul>
@@ -74,6 +79,11 @@
         <label for="tab1" class="viewer">Sinopse</label>
         <div class="tab-content" id="descricao">
         </div>
+
+        <input type="radio" id="tab-episodios" name="tabs">
+        <label for="tab-episodios" id="label-episodios"  style="display: none;"  >Episódios</label>
+        <div class="tab-content" id="temporadas-area"></div>
+        
         <!-- Elenco -->
         <input type="radio" id="tab2" name="tabs">
         <label for="tab2">Elenco</label>
@@ -105,7 +115,12 @@
 </main>
 
 
-<script src="js/database.js"></script>
+<script src="js/database/filmes.js"></script>
+
+<script src="js/database/series.js"></script>
+
+<script src="js/database/info.js"></script>
+
 <script src="js/auth.js"></script>
 <script src="js/ui.js"></script>
 <script>

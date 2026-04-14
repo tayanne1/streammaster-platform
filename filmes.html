@@ -29,15 +29,20 @@
             <li><a href="home.html">Início</a></li>
             <li><a href="filmes.html">Filmes</a></li>
             <li><a href="series.html">Séries</a></li>
-            <li><a href="#">Em Breve</a></li>
+            <li><a href="upcoming.html">Em Breve</a></li>
           </ul>
         </div>
 
         <ul class="navdireita">
-          <li>
-            <a href="">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
+          <li class="search-container">
+              <a href="#" id="btnBusca">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+
+              <div class="busca" id="boxBusca">
+                <input type="text" id="inputBusca" placeholder="Buscar filmes ou séries..."/>
+                <ul id="resultadosBusca" class="resultados-busca"></ul>
+              </div>
           </li>
           <li class="perfil-usuario" id="perfilAtivo"></li>
         </ul>
@@ -49,10 +54,9 @@
 
       <section class="filmes-section">
         <ul class="grid-filmes">
-          <!-- FILMES DO HOME.HTML -->
-          <li class="filme-item" data-genre="acao comedia">
+          <li class="filme-item" data-genre="acao comedia sci-fi">
             <article class="filmelist filme">
-              <a href="info.html?id=deadpooltwo">
+              <a href="info.html?id=deadpool_2">
                 <img
                   src="assets/img/pastafilmes/deadpooltwo.jpg"
                   alt="Filme: DeadPool 2"
@@ -76,7 +80,7 @@
 
           <li class="filme-item" data-genre="crime drama historico acao">
             <article class="filmelist filme">
-              <a href="info.html?id=peaky_blinders" 
+              <a href="info.html?id=peaky_blinders:_the_immortal_man" 
                 ><img
                   src="assets/img/pastafilmes/peaky-blinders-theimmortalman.jpg"
                   alt="Filme: Peaky Blinders: The Immortal Man"
@@ -88,7 +92,7 @@
 
           <li class="filme-item" data-genre="terror suspence comedia misterio">
             <article class="filmelist filme">
-              <a href="info.html?id=ready_or_not_2"
+              <a href="info.html?id=ready_or_not_2:_here_i_come"
                 ><img
                   src="assets/img/pastafilmes/readyorNotTwo.jpg"
                   alt="Filme: Ready or Not 2: Here I Come"
@@ -112,7 +116,7 @@
 
           <li class="filme-item" data-genre="sci-fi aventura">
             <article class="filmelist filme">
-              <a href="info.html?id=projecthailmary">
+              <a href="info.html?id=project_hail_mary">
                 <img
                   src="assets/img/pastafilmes/ProjectHailMary.jpg"
                   alt="Filme: Project Hail Mary"
@@ -124,7 +128,7 @@
 
           <li class="filme-item" data-genre="misterio suspence comedia drama">
             <article class="filmelist filme">
-              <a href="info.html?id=oneBattleAfterAnother"
+              <a href="info.html?id=one_battle_after_another"
                 ><img
                   src="assets/img/pastafilmes/one-battle-after-another.jpg"
                   alt="Filme: One Battle After Another"
@@ -172,7 +176,7 @@
 
           <li class="filme-item" data-genre="romance drama">
             <article class="filmelist filme">
-              <a href="info.html?id=remindersOfHim"
+              <a href="info.html?id=reminders_of_him"
                 ><img
                   src="assets/img/pastafilmes/reminders-of-him.jpg"
                   alt="Filme: Reminders of Him"
@@ -196,7 +200,7 @@
 
           <li class="filme-item" data-genre="acao aventura sci-fi">
             <article class="filmelist filme">
-              <a href="info.html?id=avengersEndgame">
+              <a href="info.html?id=vingadores:_ultimato">
                 <img
                   src="assets/img/pastafilmes/vingadores-endgame.jpg"
                   alt="Filme: Vingadores: Ultimato"
@@ -232,7 +236,7 @@
 
           <li class="filme-item" data-genre="acao aventura sci-fi">
             <article class="filmelist filme">
-              <a href="info.html?id=avengersInfinityWar">
+              <a href="info.html?id=vingadores:_guerra_infinita">
                 <img
                   src="/assets/img/pastafilmes/vingadores-guerra-infinita.jpg"
                   alt="Filme: Vingadores: Guerra Infinita"
@@ -244,7 +248,7 @@
 
           <li class="filme-item" data-genre="acao aventura sci-fi fantasia">
             <article class="filmelist filme">
-              <a href="info.html?id=homemAranhaSemVoltaParaCasa">
+              <a href="info.html?id=homem-aranha:_sem_volta_para_casa&genre=acao aventura sci-fi fantasia">
                 <img
                   src="assets/img/pastafilmes/homem-aranha-sem-volta-para-casa.jpg"
                   alt="Filme: Homem-Aranha: Sem Volta para Casa"
@@ -256,7 +260,7 @@
 
           <li class="filme-item" data-genre="animacao aventura familia drama">
             <article class="filmelist filme">
-              <a href="info.html?id=theLionKing">
+              <a href="info.html?id=o_rei_leão">
                 <img
                   src="assets/img/pastafilmes/rei-leao.jpg"
                   alt="Filme: O Rei Leão"
@@ -268,7 +272,7 @@
 
           <li class="filme-item" data-genre="acao crime suspense">
             <article class="filmelist filme">
-              <a href="info.html?id=velozesEFuriosos7">
+              <a href="info.html?id=velozes_e_furiosos_7">
                 <img
                   src="assets/img/pastafilmes/velozes-e-furiososserven.jpg"
                   alt="Filme: Velozes e Furiosos 7"
@@ -278,7 +282,7 @@
             </article>
           </li>
 
-          <li class="filme-item" data-genre="animacao aventura familia fantasia">
+          <li class="filme-item" data-genre="animacao aventura familia fantasia musical">
             <article class="filmelist filme">
               <a href="info.html?id=frozen">
                 <img
@@ -304,7 +308,7 @@
 
           <li class="filme-item" data-genre="animacao aventura comedia familia">
             <article class="filmelist filme">
-              <a href="info.html?id=superMarioBrosMovie">
+              <a href="info.html?id=super_mario_bros._o_filme">
                 <img
                   src="assets/img/pastafilmes/mario.jpg"
                   alt="Filme: Super Mario Bros."
@@ -316,7 +320,7 @@
 
           <li class="filme-item" data-genre="fantasia aventura misterio">
             <article class="filmelist filme">
-              <a href="info.html?id=harryPotterReliquiasDaMorteParte2">
+              <a href="info.html?id=harry_potter_e_as_relíquias_da_morte:_parte_2">
                 <img
                   src="assets/img/pastafilmes/harry-potter-serven-parte-two.jpg"
                   alt="Filme: Harry Potter e as Relíquias da Morte 2"
@@ -352,7 +356,7 @@
 
           <li class="filme-item" data-genre="animacao aventura familia comedia">
             <article class="filmelist filme">
-              <a href="info.html?id=toyStory4">
+              <a href="info.html?id=toy_story_4">
                 <img
                   src="assets/img/pastafilmes/toy-story-four.jpg"
                   alt="Filme: Toy Story 4"
@@ -388,7 +392,7 @@
 
           <li class="filme-item" data-genre="suspence acao">
             <article class="filmelist filme">
-              <a href="info.html?id=johnWick">
+              <a href="info.html?id=john_wick:_de_volta_ao_jogo">
                 <img
                   src="assets/img/pastafilmes/jonh-wick.jpg"
                   alt="Filme: John Wick: De Volta ao Jogo"
@@ -400,7 +404,7 @@
 
           <li class="filme-item" data-genre="suspence Terror misterio">
             <article class="filmelist filme">
-              <a href="info.html?id=screamserven">
+              <a href="info.html?id=pânico_7">
                 <img
                   src="assets/img/pastafilmes/screamserven.jpg"
                   alt="Filme: Pânico 7"
@@ -412,7 +416,8 @@
         </ul>
       </section>
     </main>
-
+    <script src="js/database/filmes.js"></script>
+    <script src="js/database/series.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/ui.js"></script>
     

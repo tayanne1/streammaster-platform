@@ -1,21 +1,4 @@
 
-// ============================================
-// 1. INTERFACE DO USUÁRIO (HEADER)
-// ============================================
-
-// function renderizarPerfilNoTopo() {
-//   const perfil = getPerfilAtivo(); // Função do auth.js
-//   const perfilElement = document.getElementById("perfilAtivo");
-
-//   if (perfil && perfilElement) {
-//     perfilElement.innerHTML = `
-//       <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-//         <img src="${perfil.imagem}" alt="${perfil.nome}" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;">
-//         <span style="color: #fff; font-size: 14px;">${perfil.nome}</span>
-//       </a>
-//     `;
-//   }
-// }
 
 // ============================================
 // 2. MOTOR DO CARROSSEL (Lógica de Movimento)
@@ -138,8 +121,7 @@ function estaNaLista(titulo, nomePerfil) {
 }
 
 // ============================================
-// 4. RENDERIZAÇÃO E BOTÕES
-// ============================================
+
 
 function injetarBotaoCarrossel() {
   const perfil = getPerfilAtivo();
@@ -154,7 +136,7 @@ function injetarBotaoCarrossel() {
     const generos = item.getAttribute("data-genre") || "";
 
     const btn = document.createElement("button");
-    const jaAdicionado = estaNaLista(titulo, perfil.nome);
+    const jaAdicionado = estaNaLista(titulo, perfil.nome); // Chama do lista-manager.js
 
     btn.className = jaAdicionado ? "btn-remove-list" : "btn-add-list";
     btn.innerHTML = jaAdicionado ? '<i class="fas fa-times"></i>' : '<i class="fas fa-plus"></i>';
@@ -164,11 +146,21 @@ function injetarBotaoCarrossel() {
       e.preventDefault();
       e.stopPropagation();
       
-      const dados = { titulo, imagem, generos: generos.trim() };
-      
-      if (jaAdicionado) removerFilmeDaLista(titulo, perfil.nome);
-      else salvarFilmeNaLista(dados, perfil.nome);
+      const id = item.querySelector("a")?.href.split("id=")[1];
 
+      const dados = { id, titulo, imagem, generos: generos.trim() };
+
+      // 🔥 VALIDAÇÃO
+      if (!dados.id) {
+        console.error("ERRO: item sem ID (home)", dados, item);
+        return; // impede salvar quebrado
+      }
+
+      if (jaAdicionado) {
+        removerFilmeDaLista(titulo, perfil.nome);
+      } else {
+        salvarFilmeNaLista(dados, perfil.nome);
+      }
       atualizarTodaInterface();
     };
 
@@ -181,7 +173,7 @@ function renderizarMinhaLista() {
   const container = document.querySelector(".my-list ul");
   if (!perfil || !container) return;
 
-  const lista = getListaUsuario(perfil.nome);
+  const lista = getListaUsuario(perfil.nome); // Chama do lista-manager.js
   container.innerHTML = lista.length === 0 
     ? "<p style='color: #888; text-align: center; width: 100%; padding: 20px;'>Sua lista está vazia</p>" 
     : "";
@@ -192,7 +184,10 @@ function renderizarMinhaLista() {
     li.setAttribute("data-genre", filme.generos);
     li.innerHTML = `
       <article class="filmelist">
-        <a href="#"><img src="${filme.imagem}" alt="${filme.titulo}" /><h3>${filme.titulo}</h3></a>
+        <a href="info.html?id=${filme.id}">
+          <img src="${filme.imagem}" alt="${filme.titulo}" />
+          <h3>${filme.titulo}</h3>
+        </a>
       </article>
     `;
 
@@ -200,7 +195,7 @@ function renderizarMinhaLista() {
     btn.className = "btn-remove-list";
     btn.innerHTML = '<i class="fas fa-times"></i>';
     btn.onclick = () => {
-      removerFilmeDaLista(filme.titulo, perfil.nome);
+      removerFilmeDaLista(filme.titulo, perfil.nome); // Chama do lista-manager.js
       atualizarTodaInterface();
     };
 
@@ -209,59 +204,87 @@ function renderizarMinhaLista() {
   });
 }
 
-// ============================================
-// 5. RECOMENDAÇÕES (Lógica de Gêneros)
-// ============================================
-
 function renderizarRecomendacoes() {
   const perfil = getPerfilAtivo();
   const container = document.querySelector(".mediamightlike ul");
   if (!perfil || !container) return;
 
   const lista = getListaUsuario(perfil.nome);
+
   if (lista.length === 0) {
-    container.innerHTML = "<p style='color: #888; text-align: center; width: 100%;'>Adicione algo para ver recomendações</p>";
+    container.innerHTML = "<p style='color: #888; text-align: center;'>Adicione algo para ver recomendações</p>";
     return;
   }
 
-  // Lógica simplificada de gêneros
+  // 🔥 Conta gêneros mais usados
   const generosCount = {};
-  lista.forEach(f => f.generos.split(" ").forEach(g => generosCount[g] = (generosCount[g] || 0) + 1));
-  const topGeneros = Object.entries(generosCount).sort((a,b) => b[1]-a[1]).slice(0,2).map(i => i[0]);
+  lista.forEach(f => {
+    f.generos.split(" ").forEach(g => {
+      if (g) generosCount[g] = (generosCount[g] || 0) + 1;
+    });
+  });
 
-  // Busca filmes que não estão na lista e batem o gênero
-  const disponiveis = Array.from(document.querySelectorAll(".filmesmightlike .carrossel, .seriesmightlike .carrossel"));
+  const topGeneros = Object.entries(generosCount)
+    .sort((a,b) => b[1]-a[1])
+    .slice(0,2)
+    .map(i => i[0]);
+
+  // 🔥 AGORA USA O BANCO (ESSA É A MUDANÇA IMPORTANTE)
+  const disponiveis = [...Object.values(filmes), ...Object.values(series)];
+
   const recomendados = [];
   const titulosVistos = new Set();
 
   disponiveis.forEach(item => {
-    const t = item.querySelector("h3")?.textContent;
-    const g = item.getAttribute("data-genre") || "";
-    if (!estaNaLista(t, perfil.nome) && !titulosVistos.has(t) && topGeneros.some(tg => g.includes(tg))) {
-        recomendados.push({ titulo: t, imagem: item.querySelector("img").src, generos: g });
-        titulosVistos.add(t);
+    const t = item.titulo;
+    const g = item.dataGenre || "";
+
+
+    if (
+      !estaNaLista(t, perfil.nome) &&
+      !titulosVistos.has(t) &&
+      topGeneros.some(tg => g.includes(tg))
+    ) {
+      recomendados.push({
+        id: item.id,
+        titulo: t,
+        imagem: item.imagem,
+        generos: g
+      });
+
+      titulosVistos.add(t);
     }
   });
 
   container.innerHTML = "";
-  recomendados.slice(0, 8).forEach(f => {
+
+  recomendados.slice(0, 20).forEach(f => {
     const li = document.createElement("li");
     li.className = "carrossel";
-    li.innerHTML = `<article class="filmelist"><a href="#"><img src="${f.imagem}" /><h3>${f.titulo}</h3></a></article>`;
-    
+
+    li.innerHTML = `
+      <article class="filmelist">
+        <a href="info.html?id=${f.id}">
+          <img src="${f.imagem}" />
+          <h3>${f.titulo}</h3>
+        </a>
+      </article>
+    `;
+
     const btn = document.createElement("button");
     btn.className = "btn-add-list";
     btn.innerHTML = '<i class="fas fa-plus"></i>';
-    btn.onclick = () => { salvarFilmeNaLista(f, perfil.nome); atualizarTodaInterface(); };
-    
+
+    btn.onclick = () => {
+      salvarFilmeNaLista(f, perfil.nome);
+      atualizarTodaInterface();
+    };
+
     li.appendChild(btn);
     container.appendChild(li);
   });
+  
 }
-
-// ============================================
-// 6. INICIALIZAÇÃO GERAL
-// ============================================
 
 function atualizarTodaInterface() {
     injetarBotaoCarrossel();
@@ -270,15 +293,15 @@ function atualizarTodaInterface() {
 }
 
 function inicializarHome() {
-    renderizarPerfilNoTopo();
-    
-    // Iniciar Carrosseis Estáticos
-    document.querySelectorAll(".carrosselfilmes, .carrosselserias, .my-list ul, .mediamightlike ul").forEach(c => initCarousel(c));
+    // Iniciar Carrosseis (Se você tiver a função initCarousel em ui.js)
+    document.querySelectorAll(".carrosselfilmes, .carrosselserias, .my-list ul, .mediamightlike ul").forEach(c => {
+        if(typeof initCarousel === 'function') initCarousel(c);
+    });
 
     atualizarTodaInterface();
 }
 
-// Garante que roda apenas após o DOM estar pronto
+// Garante a execução após o DOM
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", inicializarHome);
 } else {

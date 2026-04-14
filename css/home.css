@@ -90,22 +90,13 @@
 
 .cabecalho {
   width: 100%;
-  height: auto; /* Mude de 100vh para auto */
+  height: auto; 
   position: absolute;
   top: 0px;
-  z-index: 10; /* Aumente o z-index para garantir que fique acima de tudo */
-}
-
-.media {
-  font-size: 25px;
-  margin: 30px 68px 15px;
-  padding: 5px 15px;
-  border-bottom: 2px solid #ff6f00;
-  color: #fff;
+  z-index: 10; 
 }
 
 
-/* 2. REGRAS GERAIS PARA TODOS OS CARROSSEIS */
 .media {
   font-size: 30px;
   margin: 30px 68px 15px;

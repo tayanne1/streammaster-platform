@@ -1,129 +1,11 @@
-/* ==========================================================================
-   1. RESET & BASE
-   ========================================================================== */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #151313;
-  color: #fff;
-}
-
-.header {
-  position: absolute;
-  z-index: 3;
+.cabecalho {
   width: 100%;
-}
-
-.header .menunav {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  background-color: rgba(50, 50, 50, 0.5);
-  position: relative;
-}
-
-.header .menunav .nomesite {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-}
-
-.header .menunav .nomesite h2 {
-  width: 70px !important;
+  height: auto;
   position: absolute;
-  top: -40px !important;
-  left: -50px !important;
+  z-index: 10;
+  top: 0px
+  
 }
-
-.header .menunav .left-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-grow: 1;
-}
-
-.header .menunav .linknav {
-  display: flex;
-  gap: 30px;
-  margin: 0;
-}
-
-
-.menunav a {
-  position: relative;
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.menunav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 15px;
-}
-
-
-.navdireita {
-  margin-left: auto;
-}
-
-.navdireita li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 15px;
-}
-
-.navdireita a {
-  color: #fff;
-}
-
-
-.botaovoltar a {
-  background-color: #ffffff;
-  color: #ff6f00;
-  padding: 15px;
-  border-radius: 50px;
-  font-weight: bold;
-}
-
-.botaosubscribe a:hover {
-  color: #ffffff;
-  background-color: #ff6f00;
-  transition: 0.3s ease;
-}
-
-
-.linknav li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: #ff6f00;
-  transition: width 0.3s ease;
-}
-
-.linknav li a:hover::after {
-  width: 100%;
-} */
-
-
-
-
-
-
-
 
 /* Menu Mobile Controls */
 label #btn,
@@ -210,7 +92,7 @@ label #cancel {
   color: #fff;
 }
 
-.nomeeicones .fa-solid.active { color: #ff4400; }
+.nomeeicones .fa-solid.active { color: #E50914; }
 .nomeeicones .fa-check.active { color: #4CAF50; }
 
 .info {
@@ -222,7 +104,7 @@ label #cancel {
 }
 
 .ator { font-weight: bold; }
-.personagem { color: #B5AFAF; }
+.personagem { color: #B5AFAF; font-weight: 600;}
 
 /* ==========================================================================
    5. DETALHES & TABS

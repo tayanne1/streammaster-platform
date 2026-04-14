@@ -17,25 +17,7 @@
     <link rel="stylesheet" href="css/home.css" />
     <title>Stream Master - Início</title>
   </head>
-  <body>
-    <div class="capa">
-      <div class="capa-conteudo">
-          <h1 class="titulo-capa">Ação Épica e Muito Mais</h1>
-          <p class="paragrafo-capa">
-            Assista agora a filmes incríveis de ação, ficção e as séries mais bombadas do momento!
-          </p>
-          
-      <div class="botoes-capa">
-        <a class="btn btn-assista" href="#pravc">
-          <i class="fa-solid fa-play"></i> Assista agora
-        </a>
-        <a class="btn btn-minha-lista-capa" href="#my">
-          <i class="fa-solid fa-plus"></i> Minha Lista
-        </a>
-      </div>
-  </div>
-    </div>
-    <header class="cabecalho">
+  <header class="cabecalho">
       <nav class="menunav">
         <div class="left-container">
           <h1 class="nomesite">
@@ -45,25 +27,52 @@
             <li><a href="home.html">Início</a></li>
             <li><a href="filmes.html">Filmes</a></li>
             <li><a href="series.html">Séries</a></li>
-            <li><a href="">Em Breve</a></li>
+            <li><a href="upcoming.html">Em Breve</a></li>
           </ul>
         </div>
- 
+
         <ul class="navdireita">
-          <li>
-            <a href="">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
+          <li class="search-container">
+              <a href="#" id="btnBusca">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+
+              <div class="busca" id="boxBusca">
+                <input type="text" id="inputBusca" placeholder="Buscar filmes ou séries..."/>
+                <ul id="resultadosBusca" class="resultados-busca"></ul>
+              </div>
           </li>
           <li class="perfil-usuario" id="perfilAtivo"></li>
         </ul>
       </nav>
     </header>
+  <body>
+    <div class="capa">
+      <div class="capa-conteudo">
+        <h1 class="titulo-capa">Ação Épica e Muito Mais</h1>
+        <p class="paragrafo-capa">
+          Assista agora a filmes incríveis de ação, ficção e as séries mais
+          bombadas do momento!
+        </p>
+
+        <div class="botoes-capa">
+          <a class="btn btn-assista" href="#pravc">
+            <i class="fa-solid fa-play"></i> Assista agora
+          </a>
+          <a class="btn btn-minha-lista-capa" href="#my">
+            <i class="fa-solid fa-plus"></i> Minha Lista
+          </a>
+        </div>
+      </div>
+    </div>
+
 
     <main class="main">
       <h2 class="media mightlike">Recomendados para você</h2>
       <section class="mediamightlike" id="pravc">
-        <ul><!--  vai denderizar aqui  --></ul>
+        <ul>
+          <!--  vai denderizar aqui  -->
+        </ul>
       </section>
 
       <h2 class="media filmeslike">Filmes em Alta</h2>
@@ -71,7 +80,7 @@
         <ul class="carrosselfilmes">
           <li class="carrossel" data-genre="acao comedia">
             <article class="filmelist">
-              <a href="info.html?id=deadpooltwo">
+              <a href="info.html?id=deadpool_2">
                 <img
                   src="assets/img/pastafilmes/deadpooltwo.jpg"
                   alt="Filme: DeadPool 2"
@@ -95,19 +104,19 @@
 
           <li class="carrossel" data-genre="crime drama historico acao">
             <article class="filmelist">
-              <a href="info.html?id=peaky_blinders"
-                ><img
+              <a href="info.html?id=peaky_blinders:_the_immortal_man">
+                <img
                   src="assets/img/pastafilmes/peaky-blinders-theimmortalman.jpg"
                   alt="Filme: Peaky Blinders: The Immortal Man"
                 />
-                <h3>Peaky Blinders: The Immortal Man</h3></a
-              >
+                <h3>Peaky Blinders: The Immortal Man</h3>
+              </a>
             </article>
           </li>
 
           <li class="carrossel" data-genre="terror suspence comedia misterio">
             <article class="filmelist">
-              <a href="info.html?id=ready_or_not_2"
+              <a href="info.html?id=ready_or_not_2:_here_i_come"
                 ><img
                   src="assets/img/pastafilmes/readyorNotTwo.jpg"
                   alt="Filme: Ready or Not 2: Here I Come"
@@ -131,7 +140,7 @@
 
           <li class="carrossel" data-genre="sci-fi aventura">
             <article class="filmelist">
-              <a href="info.html?id=projecthailmary">
+              <a href="info.html?id=project_hail_mary">
                 <img
                   src="assets/img/pastafilmes/ProjectHailMary.jpg"
                   alt="Filme: Project Hail Mary"
@@ -143,7 +152,7 @@
 
           <li class="carrossel" data-genre="  misterio suspence comedia drama">
             <article class="filmelist">
-              <a href="info.html?id=oneBattleAfterAnother"
+              <a href="info.html?id=one_battle_after_another"
                 ><img
                   src="assets/img/pastafilmes/one-battle-after-another.jpg"
                   alt="Filme: One Battle After Another"
@@ -193,7 +202,7 @@
 
           <li class="carrossel" data-genre="romance drama">
             <article class="filmelist">
-              <a href="info.html?id=remindersOfHim"
+              <a href="info.html?id=reminders_of_him"
                 ><img
                   src="assets/img/pastafilmes/reminders-of-him.jpg"
                   alt="Filme: Reminders of Him"
@@ -203,10 +212,11 @@
             </article>
           </li>
 
-           <li class="carrossel" data-genre="terror misterio suspence Slasher">
+          <li class="carrossel" data-genre="terror misterio suspence Slasher">
             <article class="filmelist">
-              <a href="info.html?id=screamserven" 
-                ><img src="assets/img/pastafilmes/screamserven.jpg"
+              <a href="info.html?id=pânico_7"
+                ><img
+                  src="assets/img/pastafilmes/screamserven.jpg"
                   alt="Filme: Pânico 7"
                 />
                 <h3>Pânico 7</h3></a
@@ -214,17 +224,6 @@
             </article>
           </li>
 
-          <li class="carrossel" data-genre="sci-fi aventura drama">
-            <article class="filmelist">
-              <a href="info.html?id=projecthailmary"
-                ><img
-                  src="assets/img/pastafilmes/ProjectHailMary.jpg"
-                  alt="Filme: Project Hail Mary "
-                />
-                <h3>Project Hail Mary</h3></a
-              >
-            </article>
-          </li>
         </ul>
       </section>
 
@@ -233,7 +232,7 @@
         <ul class="carrosselserias">
           <li class="carrossel" data-genre=" historia drama crime">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=peaky_blinders:_sangue,_apostas_e_navalhas">
                 <img
                   src="assets/img/pastaseries/peaky-blinders.jpg"
                   alt="Serie: Peaky Blinders"
@@ -245,7 +244,7 @@
 
           <li class="carrossel" data-genre=" misterio suspense crime drama">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=dark">
                 <img src="assets/img/pastaseries/dark.jpg" alt="Serie: Dark" />
                 <h3>Dark</h3>
               </a>
@@ -254,15 +253,16 @@
 
           <li class="carrossel" data-genre="drama misterio suspense">
             <article class="filmelist">
-              <a href="#"
+              <a href="info.html?id=you"
                 ><img src="assets/img/pastaseries/you.jpg" alt="Serie: You" />
-                <h3>You</h3></a>
+                <h3>You</h3></a
+              >
             </article>
           </li>
 
           <li class="carrossel" data-genre="drama fantasia">
             <article class="filmelist">
-              <a href="#"
+              <a href="info.html?id=o_jogo_da_morte_(death's_game)"
                 ><img
                   src="assets/img/pastaseries/deaths-game.jpg"
                   alt="Serie: Deaths Game"
@@ -272,28 +272,23 @@
             </article>
           </li>
 
-          <li
-            class="carrossel"
-            data-genre="drama sci-fi terror misterio suspense"
-          >
+          <li class="carrossel"
+            data-genre="drama sci-fi terror misterio suspense">
             <article class="filmelist">
-              <a href="#"
-                ><img
+              <a href="info.html?id=stranger_things">
+                <img
                   src="assets/img/pastaseries/stranger-things.jpg"
-                  alt="Serie: Stranger Things"
-                />
-                <h3>Stranger Things</h3></a
-              >
+                  alt="Serie: Stranger Things"/>
+                <h3>Stranger Things</h3></a>
             </article>
           </li>
 
           <li class="carrossel" data-genre="crime drama misterio suspense">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=scarpetta">
                 <img
                   src="assets/img/pastaseries/scarpetta.jpg"
-                  alt="Serie: Scarpetta"
-                />
+                  alt="Serie: Scarpetta"/>
                 <h3>Scarpetta</h3>
               </a>
             </article>
@@ -301,11 +296,10 @@
 
           <li class="carrossel">
             <article class="filmelist" data-genre="fantasia acao aventura">
-              <a href="#">
+              <a href="info.html?id=one_piece_(a_série)">
                 <img
                   src="assets/img/pastaseries/one-piece.jpg"
-                  alt="Serie: One Piece"
-                />
+                  alt="Serie: One Piece"/>
                 <h3>One Piece</h3>
               </a>
             </article>
@@ -313,7 +307,7 @@
 
           <li class="carrossel" data-genre="kdrama romance comedia fantasia">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=boyfriend_on_demand">
                 <img
                   src="assets/img/pastaseries/boyfriend-on-demand.jpg"
                   alt="Serie: Boyfriend on Demand"
@@ -325,34 +319,29 @@
 
           <li class="carrossel" data-genre="aventura acao misterio suspense">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=young_sherlock">
                 <img
                   src="assets/img/pastaseries/young-sherlock.jpg"
-                  alt="Serie: Young Sherlock"
-                />
-                <h3>Young Sherlock</h3>
+                  alt="Serie: Young Sherlock"/>
+                <h3>young_sherlock</h3>
               </a>
             </article>
           </li>
 
           <li class="carrossel" data-genre="historia drama sci-fi">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=the_man_in_the_high_castle">
                 <img
                   src="assets/img/pastaseries/the-man-in-the-high-castle.jpg"
-                  alt="Serie: The Man in the High Castle"
-                />
+                  alt="Serie: The Man in the High Castle"/>
                 <h3>The Man in the High Castle</h3>
               </a>
             </article>
           </li>
 
-          <li
-            class="carrossel"
-            data-genre="kdrama sci-fi misterio suspense drama"
-          >
+          <li class="carrossel" data-genre="kdrama sci-fi misterio suspense drama">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=alice_in_borderland">
                 <img
                   src="assets/img/pastaseries/alice-in-borderland.jpg"
                   alt="Serie: Alice in Borderland"
@@ -361,9 +350,10 @@
               </a>
             </article>
           </li>
+          
           <li class="carrossel" data-genre="drama">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=the_pitt">
                 <img
                   src="assets/img/pastaseries/the-pitt.jpg"
                   alt="Serie: The Pitt"
@@ -372,12 +362,10 @@
               </a>
             </article>
           </li>
-          <li
-            class="carrossel"
-            data-genre="drama misterio suspense acao aventura"
-          >
+
+          <li class="carrossel" data-genre="drama misterio suspense acao aventura">
             <article class="filmelist">
-              <a href="#">
+              <a href="info.html?id=o_agente_noturno_(the_night_agent)">
                 <img
                   src="assets/img/pastaseries/the-night-agent.jpg"
                   alt="Serie: The Night Agent"
@@ -391,17 +379,21 @@
 
       <h2 class="media listlike">Minha Lista</h2>
       <section class="my-list" id="my">
-        <ul> <!--  vai denderizar aqui  --> </ul>
+        <ul>
+          <!--  vai denderizar aqui  -->
+        </ul>
       </section>
     </main>
+
+    <script src="js/database/filmes.js"></script>
+    <script src="js/database/series.js"></script>
 
     <script src="js/auth.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/pages/home.js"></script>
     <script>
-    verificarAutenticacao();
-    renderizarPerfilNoTopo();
+      verificarAutenticacao();
+      renderizarPerfilNoTopo();
     </script>
-    
   </body>
 </html>

@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-   background: radial-gradient(circle, #151313 0%, #000000 100%) ;/*no-repeat fixed */
+  background: radial-gradient(circle, #151313 0%, #000000 100%) ;/*no-repeat fixed */
   font-family: Arial, sans-serif;
 }
 
@@ -59,12 +59,113 @@ main {
   transition: color 0.3s ease;
 }
 
+.search-container {
+  position: relative;
+  z-index: 100;
+}
+
+/* Caixa da busca */
+.busca {
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+
+/* Quando ativa */
+.busca.ativo {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* Ícone */
+#btnBusca {
+  transition: opacity 0.9s ease;
+}
+
+#btnBusca.esconder {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.busca input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.busca.ativo input {
+  width: 299px;
+  opacity: 1;
+}
+
+.resultados-busca {
+  margin-top: 8px;
+  background: #111;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column; /* 🔥 força coluna */
+}
+
+/* cada item */
+.resultados-busca li {
+  padding: 8px;
+}
+
+/* 🔥 O MAIS IMPORTANTE */
+.resultados-busca li a {
+  display: flex;
+  align-items: center; /* ✅ centraliza vertical */
+  gap: 10px;
+
+  text-decoration: none;
+  color: white;
+}
+
+.resultados-busca li:hover {
+  background: #222;
+  border-radius: 6px;
+}
+
+/* imagem */
+.resultados-busca img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* título */
+.resultados-busca span {
+  display: block;
+  line-height: 1.2; /* 🔥 corrige quebra estranha */
+  word-break: break-word; /* quebra normal */
+}
 /* ------------------- Navegação ------------------- */
 
-.cabecalho {
-  position: absolute;
-  z-index: 3;
+.cabecalho.filmes {
+  /* width: 100%;
+  position: absolute; */
   width: 100%;
+  height: auto;
+  position: static;
+  z-index: 10;
+  top: 0px
+  
 }
 .cabecalho .menunav {
   margin: 0;
