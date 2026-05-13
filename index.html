@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="css/geral.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+  <title>Perfil</title>
+</head>
+
+<body>
+  
+  <main>
+    <div class="logosite">
+      <img src="assets/img/streammaster-vertical-icone1.png" alt="Logo StreamMaster" />
+    </div>
+    <section class="profiles">
+      <h1>Quem está assistindo?</h1>
+
+      <ul class="profiles-list" id="profilesList"></ul>
+
+      <button class="gerenciar-perfis" id="btnGerenciar">
+        Gerenciar Perfis
+      </button>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-gerenciar" id="modalGerenciar" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <h2>Gerenciar Perfis</h2>
+        <button class="modal-close" id="btnFecharModal" aria-label="Fechar modal">
+          &times;
+        </button>
+      </div>
+
+      <div class="modal-conteudo">
+
+        <div class="secao-perfis">
+          <h3>Perfis Existentes</h3>
+          <ul class="perfis-gerenciar" id="perfisGerenciar"></ul>
+        </div>
+
+        <div class="secao-adicionar">
+          <h3>Adicionar Novo Perfil</h3>
+
+          <form id="formAdicionarPerfil">
+            <div class="form-group">
+              <label for="nomePerfil">Nome do Perfil:</label>
+              <input type="text" id="nomePerfil" placeholder="Ex: Pedro" required />
+            </div>
+
+            <div class="form-group">
+              <label>Imagem do Perfil:</label>
+
+              <div class="opcoes-imagem">
+                <div>
+                  <label for="imagemURL">URL da Internet:</label>
+                  <input type="url" id="imagemURL" placeholder="https://exemplo.com/imagem.jpg" />
+                </div>
+
+                <div class="arquivo">
+                  <label for="imagemFile">Upload do Computador:</label>
+                  <input type="file" id="imagemFile" accept="image/*" hidden />
+                  <label for="imagemFile" class="btn-custom-upload">
+                    Escolher Arquivo
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="preview-imagem" id="previewImagem"></div>
+
+            <button type="submit" class="btn-adicionar">
+              Adicionar Perfil
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/pages/index.js"></script>
+</body>
+</html>
