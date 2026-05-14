@@ -1,0 +1,46 @@
+.main {
+    padding-top:4rem ;
+}
+section {
+    padding: 0;
+}
+.filmes-section .grid-filmes {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr); 
+    overflow-x: visible; 
+    gap: 2rem 1rem;
+    padding-bottom: 0;
+}
+
+
+.filme-item img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.btn-add, .btn-remove{
+    display: none;
+}
+
+
+
+@media (min-width: 768px) {      
+  .filmes-section .grid-filmes {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .main {
+    padding-top:6rem ;
+  }
+  section {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .filmes-section .grid-filmes {
+    grid-template-columns: repeat(5, 1fr) !important; 
+  }
+}

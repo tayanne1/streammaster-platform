@@ -13,8 +13,9 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.png" type="imagepng" />
 
-    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="css/geral.css"/>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/catalogos.css">
     <title>StreamMaster - Filmes</title>
   </head>
     <header id="cabecalho filmes">
@@ -57,47 +58,10 @@
       </nav>
     </header>
   <body class="body">
-      <div class="capa">
-      <div class="capa-conteudo">
-        <h1 class="titulo-capa">Ação  Épica e <span>Muito Mais</span></h1>
-        <p class="paragrafo-capa">
-          Assista agora a filmes incríveis de ação, ficção e as séries mais
-          <span>bombadas </span> do momento!
-        </p>
-
-        <div class="botoes-capa">
-          <a class="btn btn-assista" href="#recomendados">
-            <i class="fa-solid fa-play"></i> Assista agora
-          </a>
-          <a class="btn btn-minha-lista-capa" href="#minha-lista">
-            <i class="fa-solid fa-plus"></i> Minha Lista
-          </a>
-        </div>
-
-      </div>
-    </div>
     <main class="main">
-      <h2 class="media filmes-titulo">Recomendados para você</h2>
+      <h2 class="media filmes-titulo">TODOS AS SERIES</h2>
       <section class="filmes-section">
-        <ul class="grid-filmes" id="recomendados">
-        </ul>
-      </section>
-
-      <h2 class="media filmes-titulo">Filmes em alta</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="filmes-populares">
-        </ul>
-      </section>
-
-      <h2 class="media filmes-titulo">Séries em Alta</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="series-populares">
-        </ul>
-      </section>
-
-      <h2 class="media filmes-titulo">Minha Lista</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="minha-lista">
+        <ul class="grid-filmes" class="grid-catalogos" id="serie-catalogo">
         </ul>
       </section>
     </main>
@@ -114,7 +78,8 @@
     <script src="js/ui-common.js"></script>
 
     <!-- 4. LÓGICA ESPECÍFICA DA PÁGINA (Renderizar a grade de filmes) -->
-    <script src="js/pages/home.js"></script>
+
+    <script src="js/pages/catalogo.js"></script>
 
     <script>
       verificarAutenticacao();

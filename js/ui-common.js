@@ -80,3 +80,35 @@ function mostrarResultados(lista) {
     containerResultados.appendChild(li);
   });
 }
+
+function renderizarFilmes(lista, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const perfilAtivo = getPerfilAtivo(); // Função que já existe no seu auth.js
+    const nomeUsuario = perfilAtivo ? perfilAtivo.nome : null;
+    const minhaListaAtual = getListaUsuario(nomeUsuario);
+    container.innerHTML = "";
+
+    lista.forEach(filme => {
+        // Verifica se o filme está na lista para decidir o ícone
+        const estaNaLista = minhaListaAtual.some(item => item.id === filme.id);
+        const icone = estaNaLista ? "fa-xmark" : "fa-plus";
+        const classeBtn = estaNaLista ? "btn-remove" : "btn-add";
+
+        const li = document.createElement("li");
+        li.classList.add("filme-item");
+        li.innerHTML = `
+            <article class="filme-card">
+                <button class="btn-lista ${classeBtn}" data-id="${filme.id}">
+                    <i class="fa-solid ${icone}"></i>
+                </button>
+                <a href="info.html?id=${filme.id}">
+                    <img src="${filme.imagem}" alt="${filme.titulo}">
+                    <h3>${filme.titulo}</h3>
+                </a>
+            </article>
+        `;
+        container.appendChild(li);
+    });
+}
