@@ -1,0 +1,143 @@
+.main {
+  padding-top:4rem ;
+}
+.titulo {
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.upcoming-section {
+  display: flex;
+  justify-content: center;
+  padding: 0; 
+}
+
+.upcoming-list {
+  display: grid;
+  /* Mudança principal: Apenas 2 colunas */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1.5rem 1rem; /* Espaçamento ajustado para telas menores */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.upcoming-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  position: relative; 
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+  aspect-ratio: 2 / 3; 
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.upcoming-item p {
+  color: white;
+  position: absolute;
+  top: 60%; /* Ajustado para não subir tanto de uma vez */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 3; 
+  width: 90%;
+  text-align: center;
+  font-size: 0.85rem; /* Fonte um pouco menor para telas pequenas */
+  line-height: 1.1;
+  transition: 0.5s;
+}
+
+.info-filme span {
+  display: block;
+  font-size: 18px; 
+  font-weight: bold;
+  margin-bottom: 5px; 
+  text-transform: uppercase; 
+  color: #ff6f00; 
+}
+
+.info-filme .info {
+  font-size: 14px; 
+  font-weight: bold;
+  color: #fff; 
+  text-align: left; 
+  margin-top: 40px; 
+  bottom: 0;
+}
+
+.upcoming-item:hover img {
+  transform: scale(1.04);
+  filter: blur(5px);
+}
+.upcoming-item:hover .overlay {
+  opacity: 1;
+  transform: scale(1.04);
+  filter: blur(5px);
+}
+
+.upcoming-item:hover p{
+  opacity: 1;
+  top: 50%;
+}
+
+.upcoming-section li {
+  align-items: center;
+  justify-content: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 3px; 
+}
+
+.upcoming-item h3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6f00
+  ;
+}
+@media (min-width: 768px) {
+    .main {
+    padding-top:6rem ;
+  }
+  .upcoming-list {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .upcoming-section {
+    padding: 1rem; 
+  }
+}
+
+@media (min-width: 1024px){
+  .upcoming-list {
+    grid-template-columns: repeat(5, 1fr); 
+  }
+}
