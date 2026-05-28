@@ -6,7 +6,7 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/deadpooltwo.jpg",
-    capa: "/assets/img/capas-filmes/deadpoolcapa3.png",
+    capa: "assets/img/capas-filmes/deadpoolcapa3.png",
     tempo: "2h 00min",
     ano: "2018",
     genero: ["Ação", "Comédia", "Sci-Fi"],
@@ -107,7 +107,7 @@ const filmes = [
     popular: true,
     imagem:
       "https://i.pinimg.com/736x/d4/55/e2/d455e222e4c605f8ef678f1f8a433454.jpg",
-    capa: "/assets/img/capas-filmes/supercapa1.png",
+    capa: "assets/img/capas-filmes/supercapa1.png",
     tempo: "2h 28min",
     ano: "2025",
     genero: ["Ação", "Aventura", "Sci-Fi"],
@@ -217,7 +217,7 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/sinners.jpg",
-    capa: "/assets/img/capas-filmes/sinners-capa.jpg",
+    capa: "assets/img/capas-filmes/sinners-capa.jpg",
     tempo: "2h 17min",
     ano: "2025",
     genero: ["Terror", "Suspense", "Drama"],
@@ -316,7 +316,7 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/peaky-blinders-theimmortalman.jpg",
-    capa: "/assets/img/capas-filmes/peakyblinderscapa2.jpg",
+    capa: "assets/img/capas-filmes/peakyblinderscapa2.jpg",
     tempo: "1h 52min",
     ano: "2026",
     genero: ["Crime", "Drama", "Historico"],
@@ -417,12 +417,13 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/readyorNotTwo.jpg",
-    capa: "/assets/img/capas-filmes/ready-or-nottwo-capa.jpg",
+    capa: "assets/img/capas-filmes/ready-or-nottwo-capa.jpg",
     tempo: "1h 48min",
     ano: "2026",
     genero: ["Terror", "Comédia", "Suspense"],
     dataGenre: "terror suspence comedia misterio",
-    linkPlataforma: "https://www.primevideo.com/detail/0U46JWOSH6M34IBXD5RL4PFWD5",
+    linkPlataforma:
+      "https://www.primevideo.com/detail/0U46JWOSH6M34IBXD5RL4PFWD5",
     descricao:
       "Após sobreviver ao massacre da família Le Domas, Grace acredita que finalmente está livre do pesadelo. No entanto, ela descobre que o jogo mortal faz parte de algo muito maior. Ao lado de sua irmã afastada, Grace é arrastada para um novo ritual envolvendo famílias poderosas que disputam um trono de influência global. Agora, ela precisa sobreviver mais uma vez enquanto é caçada em uma corrida contra o tempo até o amanhecer.",
 
@@ -518,12 +519,13 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/luca.jpg",
-    capa: "/assets/img/capas-filmes/lucacapa.jpg",
+    capa: "assets/img/capas-filmes/lucacapa.jpg",
     tempo: "1h 35min",
     ano: "2021",
     genero: ["Animação", "Aventura", "Família"],
     dataGenre: "kids animacao familia aventura",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-f28b825f-c207-406b-923a-67f85e6d90e0?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIjzHOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-f28b825f-c207-406b-923a-67f85e6d90e0?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIjzHOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Em uma pequena cidade litorânea da Itália, Luca, um jovem monstro marinho curioso, descobre um mundo completamente novo ao sair da água e assumir forma humana. Ao lado de seu amigo Alberto, ele vive um verão inesquecível cheio de liberdade, amizade e descobertas, enquanto tenta esconder sua verdadeira identidade dos humanos que temem criaturas como ele.",
 
@@ -616,12 +618,13 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/ProjectHailMary.jpg",
-    capa: "/assets/img/capas-filmes/project-hail-mary-capa.jpg",
+    capa: "assets/img/capas-filmes/project-hail-mary-capa.jpg",
     tempo: "2h 30min",
     ano: "2026",
     genero: ["Sci-Fi", "Drama", "Aventura"],
     dataGenre: "sci-fi aventura drama",
-    linkPlataforma: "https://www.clarotvmais.com.br/filme/devoradores-de-estrelas/3573272",
+    linkPlataforma:
+      "https://www.clarotvmais.com.br/filme/devoradores-de-estrelas/3573272",
     descricao:
       "Um professor de ciências acorda sozinho em uma nave espacial sem memória de quem é ou como chegou ali. Aos poucos, ele descobre que é a última esperança da humanidade para impedir a extinção do Sol — e que precisará usar toda sua inteligência para salvar a Terra, enfrentando desafios impossíveis e uma missão solitária no espaço profundo.",
 
@@ -696,13 +699,14 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/one-battle-after-another.jpg",
-    capa: "/assets/img/capas-filmes/one-battle-after-another-capa.jpg",
+    capa: "assets/img/capas-filmes/one-battle-after-another-capa.jpg",
 
     tempo: "2h 30min",
     ano: "2025",
     genero: ["Drama", "Guerra"],
     dataGenre: "acao suspence comedia drama",
-    linkPlataforma: "https://www.hbomax.com/br/pt/movies/uma-batalha-apos-a-outra-com-libras/1dcf51eb-7e6a-4259-ac58-4f060b4ec09c?utm_source=universal_search",
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/uma-batalha-apos-a-outra-com-libras/1dcf51eb-7e6a-4259-ac58-4f060b4ec09c?utm_source=universal_search",
     descricao:
       "Durante um período de conflitos intensos, um grupo de soldados enfrenta batalhas consecutivas que testam não apenas sua resistência física, mas também seus limites emocionais e morais. Em meio ao caos da guerra, cada decisão pode significar sobrevivência ou perda, revelando o verdadeiro custo de lutar por um ideal.",
 
@@ -778,7 +782,7 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/hoppers.jpg",
-    capa: "/assets/img/capas-filmes/hoppers-capa.jpg",
+    capa: "assets/img/capas-filmes/hoppers-capa.jpg",
 
     tempo: "1h 40min",
     ano: "2026",
@@ -852,7 +856,7 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/war-machine.jpg",
-    capa: "/assets/img/capas-filmes/war-machine-capa.jpg",
+    capa: "assets/img/capas-filmes/war-machine-capa.jpg",
     tempo: "1h 46min",
     ano: "2026",
     genero: ["Ação, Ficção Científica, Suspense"],
@@ -956,12 +960,13 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/reminders-of-him.jpg",
-    capa: "/assets/img/capas-filmes/reminders-of-him-capa.jpg",
+    capa: "assets/img/capas-filmes/reminders-of-him-capa.jpg",
     tempo: "1h 52min",
     ano: "2026",
     genero: ["Drama", "Romance"],
     dataGenre: "romance drama",
-    linkPlataforma: "https://www.clarotvmais.com.br/filme/uma-segunda-chance/3573728",
+    linkPlataforma:
+      "https://www.clarotvmais.com.br/filme/uma-segunda-chance/3573728",
     descricao:
       "Após cumprir pena por um trágico erro, Kenna Rowan retorna à cidade onde tudo deu errado, na esperança de se reencontrar com sua filha de quatro anos.",
 
@@ -1072,12 +1077,13 @@ const filmes = [
     titulo: "Avatar",
     tipo: "filme",
     imagem: "assets/img/filmes/avatar.jpg", // Exemplo de URL de poster
-    capa: "/assets/img/capas-filmes/avatar-capa.jpg",
+    capa: "assets/img/capas-filmes/avatar-capa.jpg",
     tempo: "2h 42min",
     ano: "2009",
     genero: ["Ação", "Aventura", "Fantasia", "Sci-Fi"],
     dataGenre: "sci-fi aventura acao fantasia",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRInXvOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRInXvOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem primitivos, mas são altamente evoluídos. Um ex-fuzileiro naval paraplégico é enviado em uma missão única, mas fica dividido entre seguir ordens e proteger o mundo que ele sente ser seu lar.",
 
@@ -1193,12 +1199,13 @@ const filmes = [
     titulo: "Vingadores: Ultimato",
     tipo: "filme",
     imagem: "assets/img/filmes/vingadores-endgame.jpg",
-    capa: "/assets/img/capas-filmes/vingadores-capa.jpg",
+    capa: "assets/img/capas-filmes/vingadores-capa.jpg",
     tempo: "3h 01min",
     ano: "2019",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "sci-fi aventura acao heroi",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiznOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiznOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Após Thanos eliminar metade de toda a vida no universo, os Vingadores restantes devem se reunir uma última vez para desfazer as ações do Titã Louco e restaurar a ordem no cosmos.",
 
@@ -1325,12 +1332,13 @@ const filmes = [
     titulo: "Titanic",
     tipo: "filme",
     imagem: "assets/img/filmes/titanic.jpg",
-    capa: "/assets/img/capas-filmes/titanic-capa.jpg",
+    capa: "assets/img/capas-filmes/titanic-capa.jpg",
     tempo: "3h 14min",
     ano: "1997",
     genero: ["Drama", "Romance"],
     dataGenre: "romance drama historico",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiUmOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiUmOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Um artista pobre e uma jovem aristocrata se apaixonam a bordo do luxuoso e infame R.M.S. Titanic, sem saber que a embarcação está prestes a colidir com um iceberg no Atlântico Norte.",
 
@@ -1443,12 +1451,13 @@ const filmes = [
     titulo: "Avatar: O Caminho da Água",
     tipo: "filme",
     imagem: "assets/img/filmes/avatar-caminho-das-aguas.jpg",
-    capa: "/assets/img/capas-filmes/avatar-caminho-das-aguas-capa.jpg",
+    capa: "assets/img/capas-filmes/avatar-caminho-das-aguas-capa.jpg",
     tempo: "3h 12min",
     ano: "2022",
     genero: ["Ação", "Aventura", "Fantasia", "Sci-Fi"],
     dataGenre: "sci-fi aventura acao fantasia",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-e6ef640e-787e-4477-aba4-9e05925ebac2?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiVeOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-e6ef640e-787e-4477-aba4-9e05925ebac2?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiVeOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Mais de uma década após os eventos do primeiro filme, Jake Sully e Neytiri formaram uma família. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, forçando Jake a travar uma guerra difícil contra os humanos.",
 
@@ -1568,12 +1577,13 @@ const filmes = [
     titulo: "Vingadores: Guerra Infinita",
     tipo: "filme",
     imagem: "assets/img/filmes/vingadores-guerra-infinita.jpg",
-    capa: "/assets/img/capas-filmes/vingadores-infinity-war-capa.jpg",
+    capa: "assets/img/capas-filmes/vingadores-infinity-war-capa.jpg",
     tempo: "2h 29min",
     ano: "2018",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "acao aventura sci-fi heroi",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIEzOOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIEzOOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Os Vingadores e seus aliados devem estar dispostos a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que seu ataque de devastação e ruína coloque um fim ao universo.",
 
@@ -1699,12 +1709,13 @@ const filmes = [
     titulo: "Homem-Aranha: Sem Volta para Casa",
     tipo: "filme",
     imagem: "assets/img/filmes/homem-aranha-sem-volta-para-casa.jpg",
-    capa: "/assets/img/capas-filmes/homem-aranha-sem-volta-para-casa-capa.jpg",
+    capa: "assets/img/capas-filmes/homem-aranha-sem-volta-para-casa-capa.jpg",
     tempo: "2h 28min",
     ano: "2021",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "acao aventura sci-fi fantasia heroi",
-    linkPlataforma: "https://www.primevideo.com/detail/0GC8T3GTI8I9NMQUCNXJ8BLPK7/ref=atv_dl_rdr",
+    linkPlataforma:
+      "https://www.primevideo.com/detail/0GC8T3GTI8I9NMQUCNXJ8BLPK7/ref=atv_dl_rdr",
     descricao:
       "Com a identidade de Homem-Aranha revelada, Peter Parker pede ajuda ao Doutor Estranho. Quando um feitiço corre mal, vilões perigosos de outros mundos começam a aparecer, forçando Peter a descobrir o que realmente significa ser o Homem-Aranha.",
 
@@ -1828,12 +1839,13 @@ const filmes = [
     titulo: "O Rei Leão",
     tipo: "filme",
     imagem: "assets/img/filmes/rei-leao.jpg",
-    capa: "/assets/img/capas-filmes/rei-leao-capa.jpg",
+    capa: "assets/img/capas-filmes/rei-leao-capa.jpg",
     tempo: "1h 28min",
     ano: "1994",
     genero: ["Animação", "Aventura", "Drama", "Musical"],
     dataGenre: "animacao aventura familia drama musical",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIB2vOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIB2vOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Enganado pelo tio sobre a morte de seu pai, o jovem príncipe leão Simba foge de seu reino para aprender o verdadeiro significado de responsabilidade e bravura antes de retornar para reivindicar seu trono.",
 
@@ -1950,12 +1962,13 @@ const filmes = [
     titulo: "Velozes e Furiosos 7",
     tipo: "filme",
     imagem: "assets/img/filmes/velozes-e-furiososserven.jpg",
-    capa: "/assets/img/capas-filmes/velozes-e-furiososserven-capa.jpg",
+    capa: "assets/img/capas-filmes/velozes-e-furiososserven-capa.jpg",
     tempo: "2h 17min",
     ano: "2015",
     genero: ["Ação", "Suspense", "Aventura"],
     dataGenre: "acao crime suspense",
-    linkPlataforma: "https://www.hbomax.com/br/pt/movies/velozes-furiosos-7/bbdd8ac3-8311-434b-9a07-7f64753a8492?utm_source=universal_search",
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/velozes-furiosos-7/bbdd8ac3-8311-434b-9a07-7f64753a8492?utm_source=universal_search",
     descricao:
       "Após derrotarem Owen Shaw, Dominic Toretto, Brian O'Conner e o resto da equipe retornam aos EUA para uma vida normal. No entanto, o irmão mais velho de Owen, Deckard Shaw, busca vingança, colocando toda a família em perigo novamente.",
 
@@ -2076,12 +2089,13 @@ const filmes = [
     titulo: "Frozen: Uma Aventura Congelante",
     tipo: "filme",
     imagem: "assets/img/filmes/frozen.jpg",
-    capa: "/assets/img/capas-filmes/frozen-capa.jpg",
+    capa: "assets/img/capas-filmes/frozen-capa.jpg",
     tempo: "1h 42min",
     ano: "2013",
     genero: ["Animação", "Aventura", "Família", "Musical"],
     dataGenre: "animacao aventura familia fantasia musical",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-04c97b72-504b-47f2-9c6f-fe13d9aea82f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIBS-Ow6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-04c97b72-504b-47f2-9c6f-fe13d9aea82f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIBS-Ow6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "A destemida e otimista Anna parte em uma jornada épica ao lado do alpinista Kristoff e sua leal rena Sven para encontrar sua irmã Elsa, cujos poderes gelados prenderam o reino de Arendelle em um inverno eterno.",
 
@@ -2198,12 +2212,13 @@ const filmes = [
     titulo: "Barbie",
     tipo: "filme",
     imagem: "assets/img/filmes/barbie.jpg",
-    capa: "/assets/img/capas-filmes/barbie-capa.jpg",
+    capa: "assets/img/capas-filmes/barbie-capa.jpg",
     tempo: "1h 54min",
     ano: "2023",
     genero: ["Comédia", "Fantasia", "Aventura"],
     dataGenre: "comedia aventura fantasia",
-    linkPlataforma: "https://www.hbomax.com/br/pt/movies/barbie-com-libras/28c23817-bdad-44d6-8f47-96f0653cb13b?utm_source=universal_search",
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/barbie-com-libras/28c23817-bdad-44d6-8f47-96f0653cb13b?utm_source=universal_search",
     descricao:
       "Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos que perfeita, Barbie parte para o mundo real em busca da verdadeira felicidade, acompanhada por um Ken em crise existencial.",
 
@@ -2324,12 +2339,13 @@ const filmes = [
     titulo: "Super Mario Bros. O Filme",
     tipo: "filme",
     imagem: "assets/img/filmes/mario.jpg",
-    capa: "/assets/img/capas-filmes/capa-mario1.jpg",
+    capa: "assets/img/capas-filmes/capa-mario1.jpg",
     tempo: "1h 32min",
     ano: "2023",
     genero: ["Animação", "Aventura", "Comédia", "Fantasia"],
     dataGenre: "animacao aventura comedia familia",
-    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.db6f4fd7-a964-40ef-a959-d75d53483243&irclickid=590883c0N58ae11f1a2dc55172af91e0&ref=dvm_ass_acm_xx_mf_s_imp_590883c0N58ae11f1a2dc55172af91e0&irgwc=1&afsrc=1",
+    linkPlataforma:
+      "https://www.primevideo.com/detail?gti=amzn1.dv.gti.db6f4fd7-a964-40ef-a959-d75d53483243&irclickid=590883c0N58ae11f1a2dc55172af91e0&ref=dvm_ass_acm_xx_mf_s_imp_590883c0N58ae11f1a2dc55172af91e0&irgwc=1&afsrc=1",
     descricao:
       "Os irmãos encanadores Mario e Luigi são transportados para um mundo mágico. Quando Luigi é capturado pelo Rei dos Koopas, Bowser, Mario deve se unir à Princesa Peach e ao exército de Toads para salvar seu irmão e o Reino Cogumelo.",
 
@@ -2450,12 +2466,13 @@ const filmes = [
     titulo: "Harry Potter e as Relíquias da Morte: Parte 2",
     tipo: "filme",
     imagem: "assets/img/filmes/harry-potter-serven-parte-two.jpg",
-    capa: "/assets/img/capas-filmes/harry-potter-serven-parte-two-capa.jpg",
+    capa: "assets/img/capas-filmes/harry-potter-serven-parte-two-capa.jpg",
     tempo: "2h 10min",
     ano: "2011",
     genero: ["Aventura", "Fantasia", "Mistério"],
     dataGenre: "fantasia aventura misterio",
-    linkPlataforma: "https://www.hbomax.com/br/pt/movies/harry-potter-e-as-reliquias-da-morte-parte-2/1890c8c5-2f40-4140-a363-064428201826?utm_source=universal_search",
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/harry-potter-e-as-reliquias-da-morte-parte-2/1890c8c5-2f40-4140-a363-064428201826?utm_source=universal_search",
     descricao:
       "Harry, Ron e Hermione continuam sua busca pelas Horcruxes de Voldemort. A batalha final entre as forças do bem e do mal no mundo bruxo culmina em uma guerra épica dentro dos muros de Hogwarts.",
 
@@ -2576,12 +2593,13 @@ const filmes = [
     titulo: "Interestelar",
     tipo: "filme",
     imagem: "assets/img/filmes/interestelar.jpg",
-    capa: "/assets/img/capas-filmes/interestela-capa.jpg",
+    capa: "assets/img/capas-filmes/interestela-capa.jpg",
     tempo: "2h 49min",
     ano: "2014",
     genero: ["Ficção Científica", "Drama", "Aventura"],
     dataGenre: "sci-fi drama aventura",
-    linkPlataforma: "https://www.hbomax.com/br/pt/movies/interestelar/aa5b9295-8f9c-44f5-809b-3f2b84badfbf?utm_source=universal_search",
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/interestelar/aa5b9295-8f9c-44f5-809b-3f2b84badfbf?utm_source=universal_search",
     descricao:
       "As reservas naturais da Terra estão se esgotando. Um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, passando por um buraco de minhoca recém-descoberto.",
 
@@ -2708,12 +2726,13 @@ const filmes = [
     titulo: "Minions",
     tipo: "filme",
     imagem: "assets/img/filmes/minions.jpg",
-    capa: "/assets/img/capas-filmes/minions-capa.jpg",
+    capa: "assets/img/capas-filmes/minions-capa.jpg",
     tempo: "1h 31min",
     ano: "2015",
     genero: ["Animação", "Aventura", "Comédia", "Família"],
     dataGenre: "animacao aventura comedia familia",
-    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.b6a9f691-6df4-b9aa-cf5d-d8a682106fc7&irclickid=590883c0N58ae11f1a2dc55172af91e0&ref=dvm_ass_acm_xx_mf_s_imp_590883c0N58ae11f1a2dc55172af91e0&irgwc=1&afsrc=1",
+    linkPlataforma:
+      "https://www.primevideo.com/detail?gti=amzn1.dv.gti.b6a9f691-6df4-b9aa-cf5d-d8a682106fc7&irclickid=590883c0N58ae11f1a2dc55172af91e0&ref=dvm_ass_acm_xx_mf_s_imp_590883c0N58ae11f1a2dc55172af91e0&irgwc=1&afsrc=1",
     descricao:
       "Seres amarelos unicelulares e milenares, os Minions têm uma missão: servir aos maiores vilões da história. Após a morte de seu antigo mestre, eles tentam encontrar um novo chefe e acabam recrutados pela terrível Scarlet Overkill.",
 
@@ -2834,12 +2853,13 @@ const filmes = [
     titulo: "Toy Story 4",
     tipo: "filme",
     imagem: "assets/img/filmes/toy-story-four.jpg",
-    capa: "/assets/img/capas-filmes/toy-story-four-capa.jpg",
+    capa: "assets/img/capas-filmes/toy-story-four-capa.jpg",
     tempo: "1h 40min",
     ano: "2019",
     genero: ["Animação", "Aventura", "Comédia", "Família"],
     dataGenre: "animacao aventura familia comedia",
-    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-97d822a3-7dad-4d85-8350-ce4f8642511e?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIAQHOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-97d822a3-7dad-4d85-8350-ce4f8642511e?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIAQHOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Woody, Buzz Lightyear e o resto da gangue embarcam em uma viagem de estrada com Bonnie e um novo brinquedo chamado Garfinho. A jornada se transforma em uma reunião inesperada quando o desvio de Woody o leva ao seu antigo amigo Bo Peep.",
 
@@ -2957,7 +2977,7 @@ const filmes = [
     titulo: "Oppenheimer",
     tipo: "filme",
     imagem: "assets/img/filmes/oppenheimer.jpg",
-    capa: "/assets/img/capas-filmes/oppenheimer-capa.jpg",
+    capa: "assets/img/capas-filmes/oppenheimer-capa.jpg",
     tempo: "3h 00min",
     ano: "2023",
     genero: ["Biografia", "Drama", "História"],
@@ -3092,7 +3112,7 @@ const filmes = [
     titulo: "Matrix",
     tipo: "filme",
     imagem: "assets/img/filmes/matrix.jpg",
-    capa: "/assets/img/capas-filmes/matrix-capa.jpg",
+    capa: "assets/img/capas-filmes/matrix-capa.jpg",
     tempo: "2h 16min",
     ano: "1999",
     genero: ["Ação", "Sci-Fi"],
@@ -3214,7 +3234,7 @@ const filmes = [
     titulo: "John Wick: De Volta ao Jogo",
     tipo: "filme",
     imagem: "assets/img/filmes/jonh-wick.jpg",
-    capa: "/assets/img/capas-filmes/jonh-wick-capa.jpg",
+    capa: "assets/img/capas-filmes/jonh-wick-capa.jpg",
     tempo: "1h 41min",
     ano: "2014",
     genero: ["Ação", "Suspense"],
@@ -3338,7 +3358,7 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/screamserven.jpg",
-    capa: "/assets/img/capas-filmes/screamserven-capa.jpg",
+    capa: "assets/img/capas-filmes/screamserven-capa.jpg",
     tempo: "Em definição",
     ano: "2026",
     genero: ["Terror", "Slasher", "Mistério"],
