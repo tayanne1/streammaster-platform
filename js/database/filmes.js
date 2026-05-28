@@ -6,11 +6,13 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/deadpooltwo.jpg",
-    capa: "/assets/img/deadpoolcapa3.png",
+    capa: "/assets/img/capas-filmes/deadpoolcapa3.png",
     tempo: "2h 00min",
     ano: "2018",
     genero: ["Ação", "Comédia", "Sci-Fi"],
     dataGenre: "acao comedia sci-fi heroi",
+    linkPlataforma:
+      "https://www.disneyplus.com/en-br/browse/entity-27e84e56-31d3-4813-91ba-602cb52890f1?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRLy2mOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Wade Wilson, o irreverente mercenário conhecido como Deadpool, tenta encontrar um novo propósito após uma perda devastadora. Quando um jovem mutante com habilidades perigosas se torna alvo de Cable, um soldado vindo do futuro, Deadpool decide agir. Para protegê-lo, ele reúne um grupo improvável de heróis — a X-Force — e embarca em uma missão caótica, violenta e cheia de humor ácido, onde terá que aprender, à sua própria maneira, o verdadeiro significado de família.",
 
@@ -110,8 +112,10 @@ const filmes = [
     ano: "2025",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "acao aventura  sci-fi heroi",
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/superman-2025/b22d075e-d037-4c61-9b03-2e406f293b0e?utm_source=universal_search",
     descricao:
-      "Clark Kent assume seu papel como Superman e enfrenta Lex Luthor.",
+      "A trama foca no herói tentando reconciliar sua herança kryptoniana com sua criação humana como Clark. Longe de ser uma história de origem, o longa introduz um mundo onde super-heróis já existem e destaca o Superman como o símbolo máximo de bondade, compaixão e esperança em uma sociedade que enxerga o heroísmo de forma cínica.",
 
     elenco: [
       {
@@ -218,7 +222,8 @@ const filmes = [
     ano: "2025",
     genero: ["Terror", "Suspense", "Drama"],
     dataGenre: "terror suspense  drama",
-
+    linkPlataforma:
+      "https://www.hbomax.com/br/pt/movies/pecadores/2a072173-2bac-43ba-9933-10eba021ed96?utm_source=universal_search",
     descricao:
       "Dois irmãos gêmeos retornam à cidade onde cresceram tentando recomeçar suas vidas após um passado marcado por violência e erros. No entanto, ao se envolverem com uma comunidade local aparentemente comum, eles descobrem a presença de uma força sombria e sobrenatural que se alimenta dos pecados humanos. À medida que segredos vêm à tona, os irmãos são obrigados a confrontar não apenas a ameaça externa, mas também suas próprias culpas, em uma luta intensa por redenção e sobrevivência.",
 
@@ -316,6 +321,7 @@ const filmes = [
     ano: "2026",
     genero: ["Crime", "Drama", "Historico"],
     dataGenre: "crime drama historico acao",
+    linkPlataforma: "https://www.netflix.com/br-en/title/81319485",
     descricao:
       "Durante a Segunda Guerra Mundial, Tommy Shelby retorna do isolamento para enfrentar uma conspiração que ameaça o Reino Unido. Enquanto lida com seus próprios demônios e o peso do passado, ele precisa proteger sua família e impedir um plano nazista que pode destruir a economia do país.",
 
@@ -416,6 +422,7 @@ const filmes = [
     ano: "2026",
     genero: ["Terror", "Comédia", "Suspense"],
     dataGenre: "terror suspence comedia misterio",
+    linkPlataforma: "https://www.primevideo.com/detail/0U46JWOSH6M34IBXD5RL4PFWD5",
     descricao:
       "Após sobreviver ao massacre da família Le Domas, Grace acredita que finalmente está livre do pesadelo. No entanto, ela descobre que o jogo mortal faz parte de algo muito maior. Ao lado de sua irmã afastada, Grace é arrastada para um novo ritual envolvendo famílias poderosas que disputam um trono de influência global. Agora, ela precisa sobreviver mais uma vez enquanto é caçada em uma corrida contra o tempo até o amanhecer.",
 
@@ -516,6 +523,7 @@ const filmes = [
     ano: "2021",
     genero: ["Animação", "Aventura", "Família"],
     dataGenre: "kids animacao familia aventura",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-f28b825f-c207-406b-923a-67f85e6d90e0?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIjzHOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Em uma pequena cidade litorânea da Itália, Luca, um jovem monstro marinho curioso, descobre um mundo completamente novo ao sair da água e assumir forma humana. Ao lado de seu amigo Alberto, ele vive um verão inesquecível cheio de liberdade, amizade e descobertas, enquanto tenta esconder sua verdadeira identidade dos humanos que temem criaturas como ele.",
 
@@ -608,11 +616,12 @@ const filmes = [
     tipo: "filme",
     popular: true,
     imagem: "assets/img/filmes/ProjectHailMary.jpg",
-    capa: "assets/img/capas/project-hail-mary-capa.jpg",
+    capa: "/assets/img/capas-filmes/project-hail-mary-capa.jpg",
     tempo: "2h 30min",
     ano: "2026",
     genero: ["Sci-Fi", "Drama", "Aventura"],
     dataGenre: "sci-fi aventura drama",
+    linkPlataforma: "https://www.clarotvmais.com.br/filme/devoradores-de-estrelas/3573272",
     descricao:
       "Um professor de ciências acorda sozinho em uma nave espacial sem memória de quem é ou como chegou ali. Aos poucos, ele descobre que é a última esperança da humanidade para impedir a extinção do Sol — e que precisará usar toda sua inteligência para salvar a Terra, enfrentando desafios impossíveis e uma missão solitária no espaço profundo.",
 
@@ -693,6 +702,7 @@ const filmes = [
     ano: "2025",
     genero: ["Drama", "Guerra"],
     dataGenre: "acao suspence comedia drama",
+    linkPlataforma: "https://www.hbomax.com/br/pt/movies/uma-batalha-apos-a-outra-com-libras/1dcf51eb-7e6a-4259-ac58-4f060b4ec09c?utm_source=universal_search",
     descricao:
       "Durante um período de conflitos intensos, um grupo de soldados enfrenta batalhas consecutivas que testam não apenas sua resistência física, mas também seus limites emocionais e morais. Em meio ao caos da guerra, cada decisão pode significar sobrevivência ou perda, revelando o verdadeiro custo de lutar por um ideal.",
 
@@ -774,6 +784,7 @@ const filmes = [
     ano: "2026",
     genero: ["Animação", "Comédia", "Aventura"],
     dataGenre: "kids familia comedia aventura animacao",
+    linkPlataforma: "Não está disponivel para streaming",
     descricao:
       "Uma jovem descobre uma tecnologia revolucionária que permite transferir a consciência humana para corpos robóticos de animais. Ao explorar esse novo mundo, ela embarca em uma aventura inesperada, enfrentando desafios que colocam em risco o equilíbrio entre humanos, natureza e tecnologia.",
 
@@ -846,6 +857,7 @@ const filmes = [
     ano: "2026",
     genero: ["Ação, Ficção Científica, Suspense"],
     dataGenre: "acao sci-fi misterio suspence",
+    linkPlataforma: "https://www.netflix.com/br-en/title/81768525",
     descricao:
       "Máquina de Guerra acompanha os membros do exército de elite dos Estados Unidos da América, os Rangers, após o exaustivo processo seletivo para a unidade especial. Responsáveis pelas missões mais perigosas do mundo, eles são colocados cara a cara com uma ameaça além da imaginação deles. De forma inesperada, uma força extraterrestre complica ainda mais a vida deles. Estrelado por Alan Ritchson, a trama fictícia envolve o público em um suspense surpreendente.",
 
@@ -949,6 +961,7 @@ const filmes = [
     ano: "2026",
     genero: ["Drama", "Romance"],
     dataGenre: "romance drama",
+    linkPlataforma: "https://www.clarotvmais.com.br/filme/uma-segunda-chance/3573728",
     descricao:
       "Após cumprir pena por um trágico erro, Kenna Rowan retorna à cidade onde tudo deu errado, na esperança de se reencontrar com sua filha de quatro anos.",
 
@@ -1064,6 +1077,7 @@ const filmes = [
     ano: "2009",
     genero: ["Ação", "Aventura", "Fantasia", "Sci-Fi"],
     dataGenre: "sci-fi aventura acao fantasia",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-357d8505-b9bc-41e3-9f27-0414738df143?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRInXvOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem primitivos, mas são altamente evoluídos. Um ex-fuzileiro naval paraplégico é enviado em uma missão única, mas fica dividido entre seguir ordens e proteger o mundo que ele sente ser seu lar.",
 
@@ -1184,6 +1198,7 @@ const filmes = [
     ano: "2019",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "sci-fi aventura acao heroi",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiznOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Após Thanos eliminar metade de toda a vida no universo, os Vingadores restantes devem se reunir uma última vez para desfazer as ações do Titã Louco e restaurar a ordem no cosmos.",
 
@@ -1315,6 +1330,7 @@ const filmes = [
     ano: "1997",
     genero: ["Drama", "Romance"],
     dataGenre: "romance drama historico",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-ed94de01-f394-4d37-9888-1186bd143ec8?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiUmOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Um artista pobre e uma jovem aristocrata se apaixonam a bordo do luxuoso e infame R.M.S. Titanic, sem saber que a embarcação está prestes a colidir com um iceberg no Atlântico Norte.",
 
@@ -1432,6 +1448,7 @@ const filmes = [
     ano: "2022",
     genero: ["Ação", "Aventura", "Fantasia", "Sci-Fi"],
     dataGenre: "sci-fi aventura acao fantasia",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-e6ef640e-787e-4477-aba4-9e05925ebac2?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIiVeOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Mais de uma década após os eventos do primeiro filme, Jake Sully e Neytiri formaram uma família. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, forçando Jake a travar uma guerra difícil contra os humanos.",
 
@@ -1556,6 +1573,7 @@ const filmes = [
     ano: "2018",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "acao aventura sci-fi heroi",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIEzOOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Os Vingadores e seus aliados devem estar dispostos a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que seu ataque de devastação e ruína coloque um fim ao universo.",
 
@@ -1686,6 +1704,7 @@ const filmes = [
     ano: "2021",
     genero: ["Ação", "Aventura", "Sci-Fi"],
     dataGenre: "acao aventura sci-fi fantasia heroi",
+    linkPlataforma: "https://www.primevideo.com/detail/0GC8T3GTI8I9NMQUCNXJ8BLPK7/ref=atv_dl_rdr",
     descricao:
       "Com a identidade de Homem-Aranha revelada, Peter Parker pede ajuda ao Doutor Estranho. Quando um feitiço corre mal, vilões perigosos de outros mundos começam a aparecer, forçando Peter a descobrir o que realmente significa ser o Homem-Aranha.",
 
@@ -1814,6 +1833,7 @@ const filmes = [
     ano: "1994",
     genero: ["Animação", "Aventura", "Drama", "Musical"],
     dataGenre: "animacao aventura familia drama musical",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIB2vOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Enganado pelo tio sobre a morte de seu pai, o jovem príncipe leão Simba foge de seu reino para aprender o verdadeiro significado de responsabilidade e bravura antes de retornar para reivindicar seu trono.",
 
@@ -1935,6 +1955,7 @@ const filmes = [
     ano: "2015",
     genero: ["Ação", "Suspense", "Aventura"],
     dataGenre: "acao crime suspense",
+    linkPlataforma: "https://www.hbomax.com/br/pt/movies/velozes-furiosos-7/bbdd8ac3-8311-434b-9a07-7f64753a8492?utm_source=universal_search",
     descricao:
       "Após derrotarem Owen Shaw, Dominic Toretto, Brian O'Conner e o resto da equipe retornam aos EUA para uma vida normal. No entanto, o irmão mais velho de Owen, Deckard Shaw, busca vingança, colocando toda a família em perigo novamente.",
 
@@ -2060,6 +2081,7 @@ const filmes = [
     ano: "2013",
     genero: ["Animação", "Aventura", "Família", "Musical"],
     dataGenre: "animacao aventura familia fantasia musical",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-04c97b72-504b-47f2-9c6f-fe13d9aea82f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIBS-Ow6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "A destemida e otimista Anna parte em uma jornada épica ao lado do alpinista Kristoff e sua leal rena Sven para encontrar sua irmã Elsa, cujos poderes gelados prenderam o reino de Arendelle em um inverno eterno.",
 
@@ -2181,6 +2203,7 @@ const filmes = [
     ano: "2023",
     genero: ["Comédia", "Fantasia", "Aventura"],
     dataGenre: "comedia aventura fantasia",
+    linkPlataforma: "https://www.hbomax.com/br/pt/movies/barbie-com-libras/28c23817-bdad-44d6-8f47-96f0653cb13b?utm_source=universal_search",
     descricao:
       "Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos que perfeita, Barbie parte para o mundo real em busca da verdadeira felicidade, acompanhada por um Ken em crise existencial.",
 
@@ -2306,6 +2329,7 @@ const filmes = [
     ano: "2023",
     genero: ["Animação", "Aventura", "Comédia", "Fantasia"],
     dataGenre: "animacao aventura comedia familia",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.db6f4fd7-a964-40ef-a959-d75d53483243&irclickid=590883c0N58ae11f1a2dc55172af91e0&ref=dvm_ass_acm_xx_mf_s_imp_590883c0N58ae11f1a2dc55172af91e0&irgwc=1&afsrc=1",
     descricao:
       "Os irmãos encanadores Mario e Luigi são transportados para um mundo mágico. Quando Luigi é capturado pelo Rei dos Koopas, Bowser, Mario deve se unir à Princesa Peach e ao exército de Toads para salvar seu irmão e o Reino Cogumelo.",
 
@@ -2431,6 +2455,7 @@ const filmes = [
     ano: "2011",
     genero: ["Aventura", "Fantasia", "Mistério"],
     dataGenre: "fantasia aventura misterio",
+    linkPlataforma: "https://www.hbomax.com/br/pt/movies/harry-potter-e-as-reliquias-da-morte-parte-2/1890c8c5-2f40-4140-a363-064428201826?utm_source=universal_search",
     descricao:
       "Harry, Ron e Hermione continuam sua busca pelas Horcruxes de Voldemort. A batalha final entre as forças do bem e do mal no mundo bruxo culmina em uma guerra épica dentro dos muros de Hogwarts.",
 
@@ -2556,6 +2581,7 @@ const filmes = [
     ano: "2014",
     genero: ["Ficção Científica", "Drama", "Aventura"],
     dataGenre: "sci-fi drama aventura",
+    linkPlataforma: "https://www.hbomax.com/br/pt/movies/interestelar/aa5b9295-8f9c-44f5-809b-3f2b84badfbf?utm_source=universal_search",
     descricao:
       "As reservas naturais da Terra estão se esgotando. Um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, passando por um buraco de minhoca recém-descoberto.",
 
@@ -2687,6 +2713,7 @@ const filmes = [
     ano: "2015",
     genero: ["Animação", "Aventura", "Comédia", "Família"],
     dataGenre: "animacao aventura comedia familia",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.b6a9f691-6df4-b9aa-cf5d-d8a682106fc7&irclickid=590883c0N58ae11f1a2dc55172af91e0&ref=dvm_ass_acm_xx_mf_s_imp_590883c0N58ae11f1a2dc55172af91e0&irgwc=1&afsrc=1",
     descricao:
       "Seres amarelos unicelulares e milenares, os Minions têm uma missão: servir aos maiores vilões da história. Após a morte de seu antigo mestre, eles tentam encontrar um novo chefe e acabam recrutados pela terrível Scarlet Overkill.",
 
@@ -2812,6 +2839,7 @@ const filmes = [
     ano: "2019",
     genero: ["Animação", "Aventura", "Comédia", "Família"],
     dataGenre: "animacao aventura familia comedia",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-97d822a3-7dad-4d85-8350-ce4f8642511e?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRIAQHOw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Woody, Buzz Lightyear e o resto da gangue embarcam em uma viagem de estrada com Bonnie e um novo brinquedo chamado Garfinho. A jornada se transforma em uma reunião inesperada quando o desvio de Woody o leva ao seu antigo amigo Bo Peep.",
 
@@ -2934,6 +2962,7 @@ const filmes = [
     ano: "2023",
     genero: ["Biografia", "Drama", "História"],
     dataGenre: "drama historico biografia",
+    linkPlataforma: "https://www.clarotvmais.com.br/filme/oppenheimer/2826978",
     descricao:
       "A história do físico americano J. Robert Oppenheimer e seu papel no Projeto Manhattan, o esforço secreto da Segunda Guerra Mundial para desenvolver as primeiras armas nucleares do mundo.",
 
@@ -3068,6 +3097,7 @@ const filmes = [
     ano: "1999",
     genero: ["Ação", "Sci-Fi"],
     dataGenre: "sci-fi acao",
+    linkPlataforma: "https://www.netflix.com/br-en/title/20557937",
     descricao:
       "Um programador de computador descobre que o mundo em que vive é na verdade uma simulação virtual criada por máquinas para escravizar a humanidade. Ele se junta a um grupo de rebeldes para lutar pela liberdade.",
 
@@ -3189,6 +3219,7 @@ const filmes = [
     ano: "2014",
     genero: ["Ação", "Suspense"],
     dataGenre: "suspence acao",
+    linkPlataforma: "https://www.justwatch.com/br/filme/john-wick",
     descricao:
       "Um ex-assassino de aluguel sai da aposentadoria para caçar os gângsteres que mataram seu cachorro e roubaram tudo o que ele tinha de mais precioso, desencadeando uma vingança implacável.",
 
@@ -3312,6 +3343,7 @@ const filmes = [
     ano: "2026",
     genero: ["Terror", "Slasher", "Mistério"],
     dataGenre: "suspence Terror misterio slasher",
+    linkPlataforma: "https://www.clarotvmais.com.br/filme/panico-7/3572248",
     descricao:
       "Sidney Prescott retorna ao centro do terror quando um novo Ghostface emerge com regras inéditas. Após os eventos recentes, o passado e o presente se colidem em uma luta final pela sobrevivência na franquia que redefiniu o gênero meta-horror.",
 

@@ -1,6 +1,7 @@
 .main {
-  padding-top:4rem ;
+  padding-top: 4rem;
 }
+
 .titulo {
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
@@ -12,11 +13,19 @@
   padding: 0; 
 }
 
+.upcoming-section li {
+  align-items: center;
+  justify-content: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 3px; 
+}
+
+/* ==================== GRID DE LANÇAMENTOS E ESTRUTURA DOS ITENS ==================== */
 .upcoming-list {
   display: grid;
-  /* Mudança principal: Apenas 2 colunas */
   grid-template-columns: repeat(2, 1fr); 
-  gap: 1.5rem 1rem; /* Espaçamento ajustado para telas menores */
+  gap: 1.5rem 1rem;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -28,6 +37,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.upcoming-item h3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6f00;
 }
 
 .item {
@@ -43,13 +60,14 @@
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 
+/* ==================== EFEITOS DE HOVER, OVERLAY E TEXTOS FLUTUANTES ==================== */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   display: flex;
   align-items: center;
@@ -63,14 +81,14 @@
 .upcoming-item p {
   color: white;
   position: absolute;
-  top: 60%; /* Ajustado para não subir tanto de uma vez */
+  top: 60%; 
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   z-index: 3; 
   width: 90%;
   text-align: center;
-  font-size: 0.85rem; /* Fonte um pouco menor para telas pequenas */
+  font-size: 0.85rem; 
   line-height: 1.1;
   transition: 0.5s;
 }
@@ -97,46 +115,34 @@
   transform: scale(1.04);
   filter: blur(5px);
 }
+
 .upcoming-item:hover .overlay {
   opacity: 1;
   transform: scale(1.04);
   filter: blur(5px);
 }
 
-.upcoming-item:hover p{
+.upcoming-item:hover p {
   opacity: 1;
   top: 50%;
 }
 
-.upcoming-section li {
-  align-items: center;
-  justify-content: normal;
-  display: flex;
-  flex-direction: column;
-  gap: 3px; 
-}
-
-.upcoming-item h3 {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ff6f00
-  ;
-}
+/* ==================== RESPONSIVIDADE (MEDIA QUERIES) ==================== */
 @media (min-width: 768px) {
-    .main {
-    padding-top:6rem ;
+  .main {
+    padding-top: 6rem;
   }
+
   .upcoming-list {
     grid-template-columns: repeat(3, 1fr); 
   }
+
   .upcoming-section {
     padding: 1rem; 
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .upcoming-list {
     grid-template-columns: repeat(5, 1fr); 
   }

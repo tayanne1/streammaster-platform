@@ -85,13 +85,28 @@ function renderizarFilmes(lista, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    const perfilAtivo = getPerfilAtivo(); // Função que já existe no seu auth.js
+    const perfilAtivo = getPerfilAtivo(); 
     const nomeUsuario = perfilAtivo ? perfilAtivo.nome : null;
     const minhaListaAtual = getListaUsuario(nomeUsuario);
+    
+    // Limpa o container antes de renderizar qualquer coisa
     container.innerHTML = "";
 
+    // VERIFICAÇÃO: Se a lista estiver vazia
+    if (lista.length === 0) {
+        // Cria uma mensagem bonita avisando que está vazia
+        const mensagemVazia = document.createElement("div");
+        mensagemVazia.classList.add("lista-vazia-mensagem");
+        mensagemVazia.innerHTML = `
+        <p>Sua lista está vazia</p>
+        <small>Adicione filmes ou séries para assistir mais tarde!</small>
+        `;
+        container.appendChild(mensagemVazia);
+        return; // Para a execução da função aqui
+    }
+
+    // Se a lista NÃO estiver vazia, ela continua o fluxo normal e desenha os cards:
     lista.forEach(filme => {
-        // Verifica se o filme está na lista para decidir o ícone
         const estaNaLista = minhaListaAtual.some(item => item.id === filme.id);
         const icone = estaNaLista ? "fa-xmark" : "fa-plus";
         const classeBtn = estaNaLista ? "btn-remove" : "btn-add";

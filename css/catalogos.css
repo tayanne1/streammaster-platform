@@ -1,9 +1,13 @@
+
 .main {
-  padding-top:4rem ;
+  padding-top: 4rem;
 }
+
 section {
   padding: 0;
 }
+
+/* ==================== GRID DE FILMES E COMPONENTES ==================== */
 .filmes-section .grid-filmes {
   grid-auto-flow: row;
   grid-template-columns: repeat(2, 1fr); 
@@ -19,26 +23,28 @@ section {
   border-radius: 4px;
 }
 
-.btn-add, .btn-remove{
+.btn-add, 
+.btn-remove {
   display: none;
 }
 
+/* ==================== RESPONSIVIDADE (MEDIA QUERIES) ====================*/
 
-
-@media (min-width: 768px) {      
-  .filmes-section .grid-filmes {
-    grid-template-columns: repeat(3, 1fr); 
-  }
+@media (min-width: 768px) {       
   .main {
-    padding-top:6rem ;
+    padding-top: 6rem;
   }
+
   section {
     padding: 1rem;
+  }
+
+  .filmes-section .grid-filmes {
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (min-width: 1024px) {
-
   .filmes-section .grid-filmes {
     grid-template-columns: repeat(5, 1fr) !important; 
   }

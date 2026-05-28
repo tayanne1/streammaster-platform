@@ -19,7 +19,24 @@ function atualizarInterface() {
 }
 
 function gerarRecomendados(minhaLista) {
-    if (minhaLista.length === 0) return;
+    const container = document.getElementById("recomendados");
+    if (!container) return;
+
+    // VERIFICAÇÃO: Se a lista do usuário estiver vazia, mostra a mensagem de aviso
+    if (minhaLista.length === 0) {
+        container.innerHTML = ""; // Limpa o container antes
+        
+        const mensagemVazia = document.createElement("div");
+        mensagemVazia.classList.add("lista-vazia-mensagem"); // Usa a mesma classe para herdar o CSS
+        mensagemVazia.innerHTML = `
+            <p>Adicione algo para ver recomendações</p>
+            <small style="color: #888;">Baseamos nossas sugestões no seu gosto pessoal!</small>
+        `;
+        container.appendChild(mensagemVazia);
+        return; // Para a execução aqui
+    }
+
+    // Se o usuário TIVER filmes na lista, a lógica original roda normalmente:
     const generosInteresse = minhaLista.flatMap(f => f.genero);
     
     const recomendados = [...filmes, ...series].filter(item => {
@@ -28,9 +45,14 @@ function gerarRecomendados(minhaLista) {
         return temGeneroIgual && !jaEstaNaLista;
     });
 
+    // Se o filtro não achar nenhum filme correspondente (caso raro, mas possível)
+    if (recomendados.length === 0) {
+        container.innerHTML = `<p style="color: #888; text-align: center; width: 100%; padding: 20px;">Nenhuma nova recomendação disponível no momento.</p>`;
+        return;
+    }
+
     renderizarFilmes(recomendados.slice(0, 6), "recomendados");
 }
-
 // Evento de Clique Unificado (Add/Remove)
 document.addEventListener("click", e => {
     const btn = e.target.closest(".btn-lista");

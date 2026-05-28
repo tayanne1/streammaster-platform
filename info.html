@@ -14,8 +14,8 @@
     <link rel="icon" href="assets/img/favicon.png" type="imagepng" />
 
     <link rel="stylesheet" href="css/geral.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <title>Início  |  StreamMaster</title>
+    <link rel="stylesheet" href="css/info.css" />
+    <title> Carregando... </title>
   </head>
   <header id="cabecalho filmes">
     <nav class="navbar">
@@ -66,44 +66,58 @@
     </nav>
   </header>
   <body class="body">
-    <div class="capa">
-      <div class="capa-conteudo">
-        <h1 class="titulo-capa">Ação Épica e <span>Muito Mais</span></h1>
-        <p class="paragrafo-capa">
-          Assista agora a filmes incríveis de ação, ficção e as séries mais
-          <span>bombadas </span> do momento!
-        </p>
+    <main class="container" id="container">
+      <div class="content">
+        <!-- 1. IMAGEM (Poster) -->
+        <div class="poster-container">
+          <img id="poster" src="" alt="Poster do filme" />
+        </div>
 
-        <div class="botoes-capa">
-          <a class="btn btn-assista" href="#recomendados">
-            <i class="fa-solid fa-play"></i> Assista agora
-          </a>
-          <a class="btn btn-minha-lista-capa" href="#minha-lista">
-            <i class="fa-solid fa-plus"></i> Minha Lista
-          </a>
+        <!-- 2. NOME E ÍCONES -->
+        <div class="nomeeicones">
+          <h1 id="titulo">Carregando...</h1>
+          <button href="#" class="save-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button href="#" class="watched-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+
+        <!-- 3. INFORMAÇÕES (Gênero, Ano, etc) -->
+        <div class="info">
+          <div class="meta" id="meta"></div>
+        </div>
+
+        <!-- 4. BOTÃO ASSISTIR -->
+        <div class="watch-btn">
+          <a href="#" id="linkAssistir"><i class="fa-solid fa-play"></i> Assistir</a>
+        </div>
+
+        <!-- 5. TABS -->
+        <div class="tabs-container">
+          <nav class="tabs-nav" id="tabsNav">
+            <button class="tab-btn active" data-tab="sinopse">Sinopse</button>
+            <button
+              class="tab-btn"
+              data-tab="episodios"
+              id="btnEpisodios"
+              style="display: none"
+            >
+              Episódios
+            </button>
+            <button class="tab-btn" data-tab="elenco">Elenco</button>
+            <button class="tab-btn" data-tab="trailer">Trailer</button>
+            <button class="tab-btn" data-tab="sobre">Sobre</button>
+            <button class="tab-btn" data-tab="resenha">Resenhas</button>
+            <button class="tab-btn" data-tab="mais">Mais Assim</button>
+          </nav>
+
+          <div class="tab-content-display" id="tabContent">
+            <!-- Conteúdo via JS -->
+          </div>
         </div>
       </div>
-    </div>
-    <main class="main">
-      <h2 class="media filmes-titulo">Recomendados para você</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="recomendados"></ul>
-      </section>
-
-      <h2 class="media filmes-titulo">Filmes em alta</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="filmes-populares"></ul>
-      </section>
-
-      <h2 class="media filmes-titulo">Séries em Alta</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="series-populares"></ul>
-      </section>
-
-      <h2 class="media filmes-titulo">Minha Lista</h2>
-      <section class="filmes-section">
-        <ul class="grid-filmes" id="minha-lista"></ul>
-      </section>
     </main>
 
     <footer>
@@ -156,23 +170,25 @@
         </small>
       </address>
     </footer>
-    <!-- 1. BANCO DE DADOS (Contém o array 'filmes' e 'series') -->
     <script src="js/database/filmes.js"></script>
+
     <script src="js/database/series.js"></script>
 
-    <!-- 2. GERENCIADORES (Lógica pura, não mexem no HTML sozinhos) -->
     <script src="js/auth.js"></script>
     <script src="js/lista-manager.js"></script>
 
     <!-- 3. INTERFACE COMUM (Header, Busca, Menu Mobile) -->
     <script src="js/ui-common.js"></script>
-
-    <!-- 4. LÓGICA ESPECÍFICA DA PÁGINA (Renderizar a grade de filmes) -->
-    <script src="js/pages/home.js"></script>
+    <script src="js/database/info.js"></script>
 
     <script>
-      verificarAutenticacao();
-      renderizarPerfilNoTopo();
+      const titulo = document.querySelector("h1").textContent
+      document.title = `${titulo}  |  StreamMaster `
+      // Inicialização manual garantindo que tudo carregou
+      document.addEventListener("DOMContentLoaded", () => {
+        verificarAutenticacao();
+        renderizarPerfilNoTopo();
+      });
     </script>
   </body>
 </html>

@@ -10,6 +10,7 @@ const series = [
     ano: "2024",
     genero: ["Ação", "Aventura", "Sci-Fi", "Drama"],
     dataGenre: "sci-fi acao aventura drama",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.220a83cb-b9b4-4cad-b8a0-e768bb603fa7&irclickid=6e295544N59f811f1a4259bd2328cca6&ref=dvm_ass_acm_xx_mf_s_imp_6e295544N59f811f1a4259bd2328cca6&irgwc=1&afsrc=1",
     descricao:
       "200 anos após o apocalipse, os habitantes dos luxuosos refúgios nucleares são forçados a retornar à paisagem infernal irradiada que seus ancestrais deixaram para trás — e ficam chocados ao descobrir um universo incrivelmente complexo e alegremente estranho esperando por eles.",
 
@@ -109,6 +110,7 @@ const series = [
     ano: "2021",
     genero: ["Animação", "Ação", "Aventura", "Sci-Fi", "Drama"],
     dataGenre: "animacao acao aventura fantasia sci-fi",
+    linkPlataforma: "https://www.netflix.com/br-en/title/81435684",
     descricao:
       "Em meio ao conflito entre as cidades de Piltover e Zaun, duas irmãs lutam em lados opostos de uma guerra de tecnologias mágicas e convicções incompatíveis.",
 
@@ -222,6 +224,7 @@ const series = [
     ano: "2013 - 2022",
     genero: ["Crime", "Drama", "Histórico", "ação"],
     dataGenre: "crime drama historico acao",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80002479",
     descricao:
       "Uma família de gângsteres da Inglaterra de 1919 é liderada por Tommy Shelby, um perigoso chefe criminoso que está disposto a subir no mundo a qualquer preço.",
 
@@ -376,6 +379,7 @@ const series = [
     ano: "2017 - 2020",
     genero: ["Ficção Científica", "Suspense", "Mistério", "Drama"],
     dataGenre: "misterio suspense sci-fi drama",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80100172",
     descricao:
       "O desaparecimento de duas crianças em uma cidade alemã traz à tona as relações fraturadas, as vidas duplas e o passado sombrio de quatro famílias, revelando um mistério que abrange três gerações.",
 
@@ -504,6 +508,7 @@ const series = [
     ano: "2018 - Present",
     genero: ["Crime", "Drama", "Thriller"],
     dataGenre: "drama misterio suspense",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80211991",
     descricao:
       "Um gerente de livraria fica obcecado por uma aspirante a escritora e usa as redes sociais para se aproximar dela, eliminando qualquer obstáculo em seu caminho.",
 
@@ -631,6 +636,7 @@ const series = [
     ano: "2023 - 2024",
     genero: ["Fantasia", "Suspense", "Drama", "Thriller"],
     dataGenre: "kdrama drama fantasia suspense thriller ",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.a3b03bc3-0b7d-49e5-8eb1-6d80ac89dd13&irclickid=6e295544N59f811f1a4259bd2328cca6&ref=dvm_ass_acm_xx_mf_s_imp_6e295544N59f811f1a4259bd2328cca6&irgwc=1&afsrc=1",
     descricao:
       "Após tirar a própria vida, Choi Yee-jae é punido pela própria Morte. Ele é condenado a reencarnar 12 vezes em corpos diferentes, prestes a morrer. Se conseguir evitar a morte em qualquer uma dessas vidas, ele poderá viver o resto de seus dias naquele corpo.",
 
@@ -729,6 +735,7 @@ const series = [
     ano: "2016 - Presente",
     genero: ["Ficção Científica", "Terror", "Drama", "Fantasia"],
     dataGenre: "drama sci-fi terror misterio suspense",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80057281",
     descricao:
       "Quando um garoto desaparece, uma pequena cidade descobre um mistério envolvendo experimentos secretos, forças sobrenaturais aterrorizantes e uma estranha garotinha.",
 
@@ -871,6 +878,7 @@ const series = [
     ano: "2026",
     genero: ["Crime", "Drama", "Mistério", "Suspense"],
     dataGenre: "crime drama misterio suspense",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.358fabf4-c832-4266-b8af-4e2a63d63961&irclickid=6e295544N59f811f1a4259bd2328cca6&ref=dvm_ass_acm_xx_mf_s_imp_6e295544N59f811f1a4259bd2328cca6&irgwc=1&afsrc=1",
     descricao:
       "A médica legista Dra. Kay Scarpetta retorna à Virgínia para assumir seu antigo cargo, enfrentando crimes complexos que desafiam a ciência forense e fantasmas de seu próprio passado, enquanto lida com conspirações que ameaçam sua carreira.",
 
@@ -968,6 +976,7 @@ const series = [
     ano: "2023 - Presente",
     genero: ["Aventura", "Ação", "Fantasia"],
     dataGenre: "fantasia acao aventura",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80217863",
     descricao:
       "O jovem pirata Monkey D. Luffy veste o chapéu de palha e escala uma tripulação eclética para uma jornada épica em busca do tesouro em um live-action baseado no popular mangá.",
 
@@ -1069,6 +1078,7 @@ const series = [
     year: "2019",
     genero: ["Romance", "Comédia", "Web Drama"],
     dataGenre: "kdrama romance comedia fantasia",
+    linkPlataforma: "https://www.netflix.com/br-en/title/82007623",
     descricao:
       "Uma jovem decide usar um aplicativo de 'aluguel de namorados' para evitar situações sociais embaraçosas. No entanto, o que começa como um contrato de negócios acaba se tornando confuso quando sentimentos reais começam a surgir entre ela e seu namorado de aluguel.",
 
@@ -1163,6 +1173,7 @@ const series = [
     ano: "2025 - Presente",
     genero: ["Mistério", "Crime", "Ação", "Drama"],
     dataGenre: "aventura acao misterio suspense",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.66761870-19ec-47fe-94c2-8278dc11f40d&irclickid=6e295544N59f811f1a4259bd2328cca6&ref=dvm_ass_acm_xx_mf_s_imp_6e295544N59f811f1a4259bd2328cca6&irgwc=1&afsrc=1",
     descricao:
       "Aos 19 anos, Sherlock Holmes é um jovem brilhante, mas sem disciplina, que se vê envolvido em uma conspiração global enquanto investiga um assassinato na Universidade de Oxford. Sem os métodos que o tornariam famoso, ele precisa aprender a confiar em seus instintos para sobreviver ao seu primeiro caso real.",
 
@@ -1260,6 +1271,7 @@ const series = [
     ano: "2015 - 2019",
     genero: ["Ficção Científica", "Drama", "Suspense"],
     dataGenre: "historia drama sci-fi suspense",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80095228",
     descricao:
       "Em um mundo onde as Potências do Eixo venceram a Segunda Guerra Mundial, os Estados Unidos foram divididos entre o Grande Reich Alemão e os Estados Japoneses do Pacífico. Em meio à opressão, surge um mistério sobre filmes que mostram uma realidade diferente.",
 
@@ -1404,6 +1416,7 @@ const series = [
     ano: "2020 - Presente",
     genero: ["Suspense", "Ficção Científica", "Ação", "Drama"],
     dataGenre: "kdrama sci-fi misterio suspense drama",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80200575",
     descricao:
       "Um jovem viciado em videogames e seus dois amigos são transportados para uma versão paralela e deserta de Tóquio, onde são forçados a competir em jogos perigosos para sobreviver.",
 
@@ -1514,6 +1527,7 @@ const series = [
     ano: "2025 - 2026",
     genero: ["Drama", "Médico"],
     dataGenre: "drama medico",
+    linkPlataforma: "https://play.hbomax.com/video/watch/e4b915fb-5e6b-42b8-97ac-90ec7d0e3147?utm_source=universal_search",
     descricao:
       "Um olhar realista e contemporâneo sobre os desafios enfrentados por profissionais de saúde em um hospital de Pittsburgh. A série explora os dilemas éticos, a pressão extrema do sistema de saúde moderno e as vidas heróicas daqueles que trabalham na linha de frente.",
 
@@ -1619,6 +1633,7 @@ const series = [
     ano: "2023 - Presente",
     genero: ["Ação", "Suspense", "Drama"],
     dataGenre: "drama misterio suspense acao aventura",
+    linkPlataforma: "https://www.netflix.com/br-en/title/81450827",
     descricao:
       "Um agente de baixo escalão do FBI trabalha no porão da Casa Branca, cuidando de um telefone que nunca toca — até que uma noite ele finalmente recebe uma chamada que o lança em uma perigosa conspiração envolvendo um espião infiltrado no alto escalão do governo.",
 
@@ -1735,6 +1750,7 @@ const series = [
     ano: "2008 - 2013",
     genero: ["Drama", "Crime", "Suspense"],
     dataGenre: "crime drama suspense",
+    linkPlataforma: "https://www.netflix.com/br-en/title/70143836",
     descricao:
       "Um professor de química do ensino médio diagnosticado com câncer de pulmão inoperável recorre à fabricação e venda de metanfetamina para garantir o futuro financeiro de sua família, transformando-se em um implacável barão das drogas.",
 
@@ -1909,6 +1925,7 @@ const series = [
     ano: "2011 - 2019",
     genero: ["Fantasia", "Drama", "Ação", "Aventura"],
     dataGenre: "fantasia acao drama",
+    linkPlataforma: "https://play.hbomax.com/video/watch/83eca32a-12d2-4e05-8245-e17855c9e390?utm_source=universal_search",
     descricao:
       "Em uma terra onde os verões duram décadas e os invernos uma eternidade, várias famílias nobres travam uma guerra mortal pelo controle do Trono de Ferro e dos Sete Reinos de Westeros.",
 
@@ -2111,6 +2128,7 @@ const series = [
     ano: "2023 - 2025",
     genero: ["Drama", "Pós-Apocalíptico", "Terror", "Ação"],
     dataGenre: "drama acao sci-fi",
+    linkPlataforma: "https://play.hbomax.com/video/watch/c07ae042-082e-4b53-ba86-b6ac5e3004db?utm_source=universal_search",
     descricao:
       "Após uma jornada brutal pelos EUA, Joel e Ellie tentam levar uma vida estável em Jackson. No entanto, um evento violento rompe essa paz, levando Ellie a uma busca implacável por vingança e justiça, enquanto as consequências das escolhas de Joel retornam para assombrá-los.",
 
@@ -2224,6 +2242,7 @@ const series = [
     ano: "2017 - 2021",
     genero: ["Crime", "Suspense", "Drama"],
     dataGenre: "crime acao suspense",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80192098",
     descricao:
       "Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder, o Professor, manipula a polícia para realizar o maior roubo da história, mas o plano começa a desmoronar conforme as tensões aumentam.",
 
@@ -2382,6 +2401,7 @@ const series = [
     ano: "2022 - Presente",
     genero: ["Comédia de Terror", "Mistério", "Fantasia"],
     dataGenre: "fantasia comedia misterio",
+    linkPlataforma: "https://www.netflix.com/br-en/title/81231974",
     descricao:
       "Inteligente, sarcástica e um pouco morta por dentro, Wandinha Addams investiga uma onda de assassinatos enquanto faz novos amigos — e inimigos — na Escola Nunca Mais.",
 
@@ -2492,6 +2512,7 @@ const series = [
     ano: "2019 - 2026",
     genero: ["Ação", "Sátira", "Ficção Científica", "Drama"],
     dataGenre: "acao comedia sci-fi",
+    linkPlataforma: "https://www.primevideo.com/detail?gti=amzn1.dv.gti.9ab600aa-6625-b547-cfc0-190e3ad8a27d&irclickid=6e295544N59f811f1a4259bd2328cca6&ref=dvm_ass_acm_xx_mf_s_imp_6e295544N59f811f1a4259bd2328cca6&irgwc=1&afsrc=1",
     descricao:
       "Em um mundo onde super-heróis abraçam o lado sombrio de sua fama massiva, um grupo de vigilantes conhecidos como 'Os Meninos' se propõe a derrubar os super-heróis corruptos da Vought International com pouco mais do que sua coragem e disposição para lutar sujo.",
 
@@ -2641,6 +2662,7 @@ const series = [
     ano: "2010 - 2022",
     genero: ["Terror", "Drama", "Sobrevivência"],
     dataGenre: "terror acao drama sobrevivencia",
+    linkPlataforma: "https://www.netflix.com/br-en/title/70177057",
     descricao:
       "Baseado na série de quadrinhos de Robert Kirkman, este drama corajoso retrata a vida nos meses e anos que se seguem a um apocalipse zumbi. Liderados pelo ex-policial Rick Grimes, sua família e um grupo de sobreviventes estão constantemente em busca de um lar seguro e protegido.",
 
@@ -2962,6 +2984,7 @@ const series = [
     ano: "1994 - 2004",
     genero: ["Comédia", "Romance"],
     dataGenre: "comedia romance",
+    linkPlataforma: "https://play.hbomax.com/video/watch/0e33e070-5a45-425a-b655-9d7a7a6658ba?utm_source=universal_search",
     descricao:
       "Seis amigos unidos enfrentam as armadilhas da vida, do trabalho e do amor na Nova York dos anos 90, provando que a amizade é o verdadeiro suporte para qualquer situação.",
 
@@ -3336,6 +3359,7 @@ const series = [
     ano: "2016 - 2023",
     genero: ["Drama", "Histórico", "Biografia"],
     dataGenre: "drama historico biografia",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80025678",
     descricao:
       "Esta série dramática segue a vida da Rainha Elizabeth II, desde o seu casamento em 1947 até os dias atuais. A cada duas temporadas, um novo elenco assume os papéis para refletir o envelhecimento dos personagens através das décadas de reinado.",
 
@@ -3516,9 +3540,10 @@ const series = [
     imagem: "assets/img/series/black-mirror.jpg",
     capa: "/assets/img/capas-series/black-mirror-capa1.jpg",
     tempo: "6 Temporadas",
-    ano: "2011 - Presente",
+    ano: "2011",
     genero: ["Ficção Científica", "Suspense", "Antologia", "Drama"],
     dataGenre: "sci-fi suspense drama antologia",
+    linkPlataforma: "https://www.netflix.com/br-en/title/70264888",
     descricao:
       "Uma série de antologia que explora um futuro próximo perturbador, onde as maiores inovações tecnológicas da humanidade e seus instintos mais sombrios colidem.",
 
@@ -3659,6 +3684,7 @@ const series = [
     ano: "2022 - Presente",
     genero: ["Drama", "Comédia"],
     dataGenre: "drama comedia",
+    linkPlataforma: "https://www.disneyplus.com/en-br/browse/entity-05eb6a8e-90ed-4947-8c0b-e6536cbddd5f?irclickid=Sfkz5UwfoxyZRUIQAa3FxyzsUkuRdR3POw6KQM0&campaignId=9358&irgwc=1&afsrc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-1172972",
     descricao:
       "Carmy Berzatto, um jovem chef de elite do mundo da alta gastronomia, volta para Chicago para administrar a lanchonete de sua família após uma perda trágica. Ele precisa equilibrar as tensões da cozinha, uma equipe obstinada e seus próprios traumas.",
 
@@ -3804,6 +3830,7 @@ const series = [
     ano: "2015 - 2017",
     genero: ["Crime", "Drama", "Biografia"],
     dataGenre: "crime drama biografia",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80025172",
     descricao:
       "A série narra a história real da propagação da cocaína nos Estados Unidos e na Europa, graças ao Cartel de Medellín, liderado por Pablo Escobar, enquanto as forças policiais lutam em um conflito brutal e sangrento.",
 
@@ -3936,6 +3963,7 @@ const series = [
     ano: "2019 - Presente",
     genero: ["Drama", "Teen"],
     dataGenre: "drama teen",
+    linkPlataforma: "https://play.hbomax.com/video/watch/a4c77a14-d711-440f-9907-0afc17f0e2a9?utm_source=universal_search",
     descricao:
       "Uma visão crua e visualmente deslumbrante sobre um grupo de estudantes do ensino médio que navega por amores, traumas, redes sociais e vício em drogas em um mundo cada vez mais incerto.",
 
@@ -4066,6 +4094,7 @@ const series = [
     ano: "2005 - 2013",
     genero: ["Comédia", "Sitcom", "documentário"],
     dataGenre: "comedia sitcom documentario",
+    linkPlataforma: "https://www.netflix.com/br-en/title/70136120",
     descricao:
       "No formato de documentário, a série retrata o cotidiano de um grupo de funcionários de uma empresa de papel em Scranton, Pensilvânia. Liderados pelo atrapalhado gerente Michael Scott, eles lidam com o tédio, as fofocas e as rivalidades do ambiente de escritório.",
 
@@ -4376,6 +4405,7 @@ const series = [
     ano: "2020 - Presente",
     genero: ["Drama", "Romance", "Histórico"],
     dataGenre: "romance drama historico",
+    linkPlataforma: "https://www.netflix.com/br-en/title/80232398",
     descricao:
       "Oito irmãos inseparáveis buscam amor e felicidade na alta sociedade de Londres. Inspirada nos best-sellers de Julia Quinn, a série revela os segredos e escândalos da Regência Britânica através do olhar da misteriosa Lady Whistledown.",
 
