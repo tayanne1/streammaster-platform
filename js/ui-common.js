@@ -1,4 +1,3 @@
-// 1. Renderizar Perfil no Header
 function renderizarPerfilNoTopo() {
   const perfil = getPerfilAtivo();
   const perfilElement = document.getElementById("perfilAtivo");
@@ -11,7 +10,7 @@ function renderizarPerfilNoTopo() {
   }
 }
 
-// 2. Lógica de Busca
+/* ========== Lógica de Busca ========== */
 const btnBusca = document.getElementById("btnBusca");
 const boxBusca = document.getElementById("boxBusca");
 const inputBusca = document.getElementById("inputBusca");
@@ -45,7 +44,6 @@ if (btnBusca) {
 
 
 function buscarConteudo(termo) {
-    // Une os dois arrays de banco de dados
     const tudo = [...filmes, ...series];
     termo = termo.toLowerCase();
     
@@ -55,7 +53,6 @@ function buscarConteudo(termo) {
     );
 }
 
-// No inputBusca addEventListener:
 inputBusca.addEventListener("input", () => {
     const valor = inputBusca.value.trim();
     if (valor.length === 0) {
@@ -89,12 +86,10 @@ function renderizarFilmes(lista, containerId) {
     const nomeUsuario = perfilAtivo ? perfilAtivo.nome : null;
     const minhaListaAtual = getListaUsuario(nomeUsuario);
     
-    // Limpa o container antes de renderizar qualquer coisa
+
     container.innerHTML = "";
 
-    // VERIFICAÇÃO: Se a lista estiver vazia
     if (lista.length === 0) {
-        // Cria uma mensagem bonita avisando que está vazia
         const mensagemVazia = document.createElement("div");
         mensagemVazia.classList.add("lista-vazia-mensagem");
         mensagemVazia.innerHTML = `
@@ -102,10 +97,9 @@ function renderizarFilmes(lista, containerId) {
         <small>Adicione filmes ou séries para assistir mais tarde!</small>
         `;
         container.appendChild(mensagemVazia);
-        return; // Para a execução da função aqui
+        return;
     }
 
-    // Se a lista NÃO estiver vazia, ela continua o fluxo normal e desenha os cards:
     lista.forEach(filme => {
         const estaNaLista = minhaListaAtual.some(item => item.id === filme.id);
         const icone = estaNaLista ? "fa-xmark" : "fa-plus";

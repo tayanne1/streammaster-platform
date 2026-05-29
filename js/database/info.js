@@ -1,17 +1,13 @@
-// 1. PEGAR ID DA URL
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// 2. FILME E SERIE ATUAL
 const conteudo = filmes.find(f => f.id === id) || series.find(s => s.id === id);
 
-// VALIDAÇÃO
 if (!conteudo) {
   document.body.innerHTML = "<h1>Conteúdo não encontrado</h1>";
   throw new Error("ID de filme ou série inválido");
 }
 
-// 3. ATUALIZAR ELEMENTOS FIXOS (Topo da página)
 document.getElementById("titulo").textContent = conteudo.titulo;
 document.getElementById("poster").src = conteudo.imagem;
 document.getElementById("meta").innerHTML = `
@@ -19,18 +15,16 @@ document.getElementById("meta").innerHTML = `
   <span>${conteudo.ano} &bull; </span>
   <span >${conteudo.genero.join(", ")} </span>
 `;
-// ==========================================================================
-// NOVA LÓGICA: DIRECIONAR PARA A PLATAFORMA OFICIAL
-// ==========================================================================
+
+
 const botaoAssistirLink = document.querySelector(".watch-btn a");
 
 if (botaoAssistirLink) {
     if (conteudo.linkPlataforma) {
         botaoAssistirLink.href = conteudo.linkPlataforma;
-        botaoAssistirLink.target = "_blank"; // Abre o site oficial em uma nova aba
-        botaoAssistirLink.rel = "noopener noreferrer"; // Segurança extra para links externos
+        botaoAssistirLink.target = "_blank"; 
+        botaoAssistirLink.rel = "noopener noreferrer"; 
     } else {
-        // Caso você esqueça de colocar o link em algum filme do banco de dados:
         botaoAssistirLink.href = "#";
         botaoAssistirLink.addEventListener("click", (e) => {
             e.preventDefault();
@@ -38,32 +32,26 @@ if (botaoAssistirLink) {
         });
     }
 }
-// Aplicar Capa de Fundo
+/* ========== Aplicar Capa de Fundo ========== */
 const container = document.getElementById("container");
 if (conteudo.capa && container) {
-    // Aplicamos diretamente no style de background do container
-    // Isso força o navegador a procurar a imagem a partir da raiz (info.html)
     container.style.backgroundImage = `url("${conteudo.capa}")`;
     container.style.backgroundSize = "cover";
     container.style.backgroundPosition = "center";
 }
 
-// ==========================================
-// LÓGICA PROFISSIONAL DE TABS
-// ==========================================
 
 const tabContent = document.getElementById('tabContent');
 const allTabBtns = document.querySelectorAll('.tab-btn');
 const btnEpisodios = document.getElementById('btnEpisodios');
 
-// Esconde ou mostra o botão de episódios
 if (conteudo.tipo === "serie" && conteudo.temporadas_detalhes) {
     if (btnEpisodios) btnEpisodios.style.display = "inline-block";
 } else {
     if (btnEpisodios) btnEpisodios.style.display = "none";
 }
 
-// OBJETO DE RENDERIZAÇÃO (Pega os dados do banco e transforma em HTML)
+/* ========== OBJETO DE RENDERIZAÇÃO (Pega os dados do banco e transforma em HTML) ========== */
 const renderizadores = {
     sinopse: () => `<p class="spacep">${conteudo.descricao}</p>`,
     
@@ -139,43 +127,42 @@ const renderizadores = {
     ` : ""
 };
 
-// FUNÇÃO PARA TROCAR ABA
 function gerenciarTabs() {
     allTabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const tabId = btn.getAttribute('data-tab');
 
-            // 1. Estilo Visual
             allTabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // 2. Trocar Conteúdo
             if (renderizadores[tabId]) {
                 tabContent.innerHTML = renderizadores[tabId]();
             }
 
-            // 3. Scroll Suave apenas na barra
-            btn.scrollIntoView({
-                behavior: 'smooth',
-                inline: 'center',
-                block: 'nearest'
-            });
+
+            const tabsNav = document.getElementById('tabsNav');
+            if (tabsNav) {
+
+                const botaoEsquerda = btn.offsetLeft;
+                const botaoLargura = btn.offsetWidth;
+                const navLargura = tabsNav.offsetWidth;
+                
+                tabsNav.scrollTo({
+                    left: botaoEsquerda - (navLargura / 2) + (botaoLargura / 2),
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 }
 
-// Inicia as abas
 gerenciarTabs();
 
-// Força o carregamento da Sinopse ao abrir a página
 const defaultTab = document.querySelector('.tab-btn.active');
 if (defaultTab) defaultTab.click();
 
 
-// ============================================
-// LÓGICA DOS BOTÕES (SALVAR E ASSISTIDO)
-// ============================================
-
+/* ========== LÓGICA DOS BOTÕES (SALVAR E ASSISTIDO) ========== */
 const saveBtnLink = document.querySelector('.save-btn');
 const watchedBtnLink = document.querySelector('.watched-btn');
 
@@ -183,27 +170,23 @@ function atualizarInterfaceBotoes() {
     const perfil = typeof getPerfilAtivo === 'function' ? getPerfilAtivo() : null;
     if (!perfil) return;
 
-    // 1. Lógica do botão de Coração (Salvar/Favoritos)
     const saveIcon = saveBtnLink?.querySelector('i');
     if (saveIcon) {
-        // CORREÇÃO: Buscamos a lista atual do usuário e checamos pelo ID do conteúdo
         const minhaListaAtual = getListaUsuario(perfil.nome);
         const jaEstaSalvo = minhaListaAtual.some(item => item.id === conteudo.id);
 
         if (jaEstaSalvo) {
             saveIcon.classList.remove('fa-regular');
-            saveIcon.classList.add('fa-solid', 'active'); // Coração preenchido e ativo
+            saveIcon.classList.add('fa-solid', 'active');
         } else {
             saveIcon.classList.remove('fa-solid', 'active');
-            saveIcon.classList.add('fa-regular'); // Coração vazio normal
+            saveIcon.classList.add('fa-regular'); 
         }
     }
 
     // 2. Lógica do botão Assistido (Check)
     const watchedIcon = watchedBtnLink?.querySelector('i');
     if (watchedIcon) {
-        // Se você tiver uma função parecida no lista-manager para o check, use aqui.
-        // Se der erro parecido na função abaixo, pode comentar esse bloco do check temporariamente.
         if (typeof verificarSeEstaAssistido === 'function' && verificarSeEstaAssistido(conteudo.id, perfil.nome)) {
             watchedIcon.classList.add('active');
         } else {
@@ -222,11 +205,8 @@ if (saveBtnLink) {
         const jaEstaSalvo = minhaListaAtual.some(item => item.id === conteudo.id);
 
         if (jaEstaSalvo) {
-            // Se já está salvo, removemos usando o ID (ou título, dependendo de como está seu lista-manager)
-            // Se o seu remover recebe o ID, passe conteudo.id. Se recebe título, passe conteudo.titulo.
             removerFilmeDaLista(conteudo.id, perfil.nome);
         } else {
-            // Se não está salvo, monta o objeto completo para guardar no LocalStorage
             const dados = {
               id: conteudo.id,
               titulo: conteudo.titulo,
@@ -253,5 +233,4 @@ if (watchedBtnLink) {
     });
 }
 
-// Executa logo ao carregar a página para o coração nascer com o estado correto
 atualizarInterfaceBotoes();

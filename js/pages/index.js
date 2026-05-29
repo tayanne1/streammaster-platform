@@ -1,10 +1,5 @@
-// ============================================
-// js/pages/index.js - INTERFACE DA TELA INICIAL
-// ============================================
-
 document.addEventListener("DOMContentLoaded", () => {
   
-  // --- Renderização ---
   function renderizarPerfis() {
     const lista = document.getElementById("profilesList");
     if (!lista) return;
@@ -47,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizarEstadoBotaoAdicionar();
   }
 
-  // --- Ações ---
+/* ========== Ações ========== */
   function deletarPerfil(index) {
     const perfis = obterPerfis();
     if (perfis.length <= 1) {
@@ -84,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
     form.style.opacity = limite ? "0.6" : "1";
   }
 
-  // --- Modal e Formulário ---
   function abrirModal() {
     document.getElementById("modalOverlay").classList.add("ativo");
     document.getElementById("modalGerenciar").classList.add("ativo");
@@ -98,14 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("previewImagem").innerHTML = "";
   }
 
-  // Preview de imagem (URL)
   document.getElementById("imagemURL")?.addEventListener("input", function () {
     if (this.value) {
       document.getElementById("previewImagem").innerHTML = `<img src="${this.value}" alt="Preview" />`;
     }
   });
 
-  // Preview de imagem (Arquivo)
   document.getElementById("imagemFile")?.addEventListener("change", function (e) {
     const file = e.target.files[0];
     if (!file) return;
@@ -116,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
     reader.readAsDataURL(file);
   });
 
-  // Submit do formulário
   document.getElementById("formAdicionarPerfil")?.addEventListener("submit", (e) => {
     e.preventDefault();
     const nome = document.getElementById("nomePerfil").value.trim();
@@ -136,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // --- Eventos Iniciais ---
   document.getElementById("btnGerenciar")?.addEventListener("click", abrirModal);
   document.getElementById("btnFecharModal")?.addEventListener("click", fecharModal);
   document.getElementById("modalOverlay")?.addEventListener("click", fecharModal);

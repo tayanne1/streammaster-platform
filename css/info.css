@@ -41,9 +41,8 @@ label #cancel {
 }
 
 /* ==================== ESTRUTURA DO CONTAINER (MOBILE FIRST) ==================== */
-/* Substitua o bloco do .container e .container::before por este: */
 .container {
-  display: flex;
+display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -54,13 +53,20 @@ label #cancel {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  /* Corta qualquer coisa (como o desfoque) que tente sair das bordas */
+  overflow: hidden;
 }
 
 .container::before {
-  content: "";
+content: "";
   position: absolute;
-  inset: 0;
-  background: inherit; /* Em vez de var(), ele herda o backgroundImage direto do pai! */
+  /* Em vez de usar 0, jogamos as bordas para fora usando números negativos */
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  
+  background: inherit;
   filter: brightness(0.8) blur(16px);
   z-index: 0;
 }

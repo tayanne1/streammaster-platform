@@ -1,6 +1,4 @@
-// ==========================================
-// 1. UTILITÁRIOS DE CHAVES (LocalStorage)
-// ==========================================
+/* ========== UTILITÁRIOS DE CHAVES (LocalStorage) ========== */
 function getChaveListaPerfil(nomePerfil) {
     return nomePerfil ? `lista_${nomePerfil}` : null;
 }
@@ -9,9 +7,7 @@ function getChaveAssistidos(nomePerfil) {
     return `check_assistidos_${nomePerfil}`;
 }
 
-// ==========================================
-// 2. GERENCIAMENTO DA "MINHA LISTA"
-// ==========================================
+
 function getListaUsuario(nomePerfil) {
     const chave = getChaveListaPerfil(nomePerfil);
     if (!chave) return [];
@@ -37,18 +33,15 @@ function removerFilmeDaLista(id, nomePerfil) {
     localStorage.setItem(chave, JSON.stringify(listaAtualizada));
 }
 
-// ==========================================
-// 3. SISTEMA DE "ASSISTIDOS" (Para uso futuro)
-// ==========================================
 function toggleStatusAssistido(id, nomePerfil) {
     const chave = getChaveAssistidos(nomePerfil);
     let assistidos = JSON.parse(localStorage.getItem(chave)) || [];
     const index = assistidos.indexOf(id);
 
     if (index > -1) {
-        assistidos.splice(index, 1); // Remove se já estiver lá
+        assistidos.splice(index, 1); 
     } else {
-        assistidos.push(id); // Adiciona se não estiver
+        assistidos.push(id); 
     }
     localStorage.setItem(chave, JSON.stringify(assistidos));
 }

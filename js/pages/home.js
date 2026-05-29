@@ -1,11 +1,7 @@
-// js/pages/home.js
-
-// 1. Pegar perfil ativo para saber de qual lista estamos falando
 const perfilAtivo = getPerfilAtivo();
 const nomeUsuario = perfilAtivo ? perfilAtivo.nome : null;
 
 
-// Função para atualizar a seção "Minha Lista" e os recomendados
 function atualizarInterface() {
     const minhaLista = getListaUsuario(nomeUsuario);
     renderizarFilmes(minhaLista, "minha-lista");
@@ -22,21 +18,19 @@ function gerarRecomendados(minhaLista) {
     const container = document.getElementById("recomendados");
     if (!container) return;
 
-    // VERIFICAÇÃO: Se a lista do usuário estiver vazia, mostra a mensagem de aviso
     if (minhaLista.length === 0) {
-        container.innerHTML = ""; // Limpa o container antes
+        container.innerHTML = ""; 
         
         const mensagemVazia = document.createElement("div");
-        mensagemVazia.classList.add("lista-vazia-mensagem"); // Usa a mesma classe para herdar o CSS
+        mensagemVazia.classList.add("lista-vazia-mensagem"); 
         mensagemVazia.innerHTML = `
             <p>Adicione algo para ver recomendações</p>
             <small style="color: #888;">Baseamos nossas sugestões no seu gosto pessoal!</small>
         `;
         container.appendChild(mensagemVazia);
-        return; // Para a execução aqui
+        return; 
     }
 
-    // Se o usuário TIVER filmes na lista, a lógica original roda normalmente:
     const generosInteresse = minhaLista.flatMap(f => f.genero);
     
     const recomendados = [...filmes, ...series].filter(item => {
@@ -45,7 +39,6 @@ function gerarRecomendados(minhaLista) {
         return temGeneroIgual && !jaEstaNaLista;
     });
 
-    // Se o filtro não achar nenhum filme correspondente (caso raro, mas possível)
     if (recomendados.length === 0) {
         container.innerHTML = `<p style="color: #888; text-align: center; width: 100%; padding: 20px;">Nenhuma nova recomendação disponível no momento.</p>`;
         return;
@@ -53,7 +46,7 @@ function gerarRecomendados(minhaLista) {
 
     renderizarFilmes(recomendados.slice(0, 6), "recomendados");
 }
-// Evento de Clique Unificado (Add/Remove)
+
 document.addEventListener("click", e => {
     const btn = e.target.closest(".btn-lista");
     if (!btn) return;
@@ -68,8 +61,7 @@ document.addEventListener("click", e => {
         removerFilmeDaLista(id, nomeUsuario);
     }
 
-    atualizarInterface(); // Re-renderiza tudo para atualizar os ícones
+    atualizarInterface(); 
 });
 
-// Inicialização
 atualizarInterface();
