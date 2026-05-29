@@ -41,8 +41,9 @@ if (botaoAssistirLink) {
 // Aplicar Capa de Fundo
 const container = document.getElementById("container");
 if (conteudo.capa && container) {
-    const caminhoCorreto = conteudo.capa.startsWith('/') ? conteudo.capa : '/' + conteudo.capa;
-    container.style.setProperty("--bg-filme", `url("${caminhoCorreto}")`);
+    // Aplicamos diretamente no style de background do container
+    // Isso força o navegador a procurar a imagem a partir da raiz (info.html)
+    container.style.backgroundImage = `url("${conteudo.capa}")`;
     container.style.backgroundSize = "cover";
     container.style.backgroundPosition = "center";
 }

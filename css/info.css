@@ -41,6 +41,7 @@ label #cancel {
 }
 
 /* ==================== ESTRUTURA DO CONTAINER (MOBILE FIRST) ==================== */
+/* Substitua o bloco do .container e .container::before por este: */
 .container {
   display: flex;
   justify-content: center;
@@ -51,15 +52,15 @@ label #cancel {
   color: white;
   padding: 0;
   min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: var(--bg-filme);
-  background-size: cover;
-  background-position: center;
+  background: inherit; /* Em vez de var(), ele herda o backgroundImage direto do pai! */
   filter: brightness(0.8) blur(16px);
   z-index: 0;
 }
